@@ -1,5 +1,4 @@
 import ReactRotatingText from 'react-rotating-text';
-
 import LinkIcons from '../components/LinkIcons';
 
 import styles from '../styles/Home.module.css';
@@ -23,7 +22,7 @@ export default function Home() {
 						</span>
 						.js developer
 					</p>
-					<div className="styles.links">
+					<div className={styles.links}>
 						<LinkIcons />
 					</div>
 				</div>

@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>Joe McCann</title>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="stylesheet" href="/favicon.ico" />
 			</Head>
 			<Navbar />
 			<Component {...pageProps} />
