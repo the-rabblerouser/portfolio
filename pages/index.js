@@ -1,12 +1,11 @@
-import Head from 'next/head';
+import Navbar from '../components/Navbar';
+
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
 	return (
-		<div className={styles.container}>
-			<main className={styles.main}>
-				<h1>Hello World</h1>
-			</main>
-		</div>
+		<>
+			<div className={styles.container}>Hello World</div>
+		</>
 	);
 }
