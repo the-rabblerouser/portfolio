@@ -7,9 +7,9 @@ const Navbar = (darkMode, toggleMode) => {
 			<nav>
 				<div className="container">
 					<div className="navbar-alignment">
-						<a href="/" className="title">
-							joemccann.dev
-						</a>
+						<Link href="/">
+							<a className="title">joemccann.dev</a>
+						</Link>
 						<div className="section-navs">
 							<Link href="/projects">
 								<a>Projects</a>
