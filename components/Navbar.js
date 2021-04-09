@@ -14,7 +14,7 @@ const Navbar = (darkMode, toggleMode) => {
 							<Link href="/projects">
 								<a>Projects</a>
 							</Link>
-							<Link href="/about">
+							<Link href="#about">
 								<a>About</a>
 							</Link>
 							{/* <button onClick={toggleMode}>
