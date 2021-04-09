@@ -10,7 +10,7 @@ export default function Home() {
 				<div className={styles.container}>
 					<h1 className={styles.home}>Hi, I'm Joe</h1>
 					<p className={styles.slidingText}>
-						and i'm your next{' '}
+						and i'm your new{' '}
 						<span>
 							<ReactRotatingText
 								typingInterval={140}
