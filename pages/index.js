@@ -3,6 +3,15 @@ import LinkIcons from '../components/LinkIcons';
 
 import styles from '../styles/Home.module.css';
 
+import {
+	Node,
+	React,
+	Typescript,
+	Javascript,
+	Mongodb,
+	Next,
+} from '../components/Icons';
+
 export default function Home() {
 	return (
 		<>
@@ -71,14 +80,26 @@ export default function Home() {
 									<h4 className={styles.skillsTitle}>look at what i can do</h4>
 									<div className={styles.skills}>
 										<ul className={styles.skillsList}>
-											<li>javascript</li>
-											<li>react.js</li>
-											<li>next.js</li>
+											<li>
+												<Javascript /> javascript
+											</li>
+											<li>
+												<React /> react.js
+											</li>
+											<li>
+												<Javascript /> next.js
+											</li>
 										</ul>
 										<ul className={styles.skillsList}>
-											<li>node.js</li>
-											<li>typescript</li>
-											<li>mongo</li>
+											<li>
+												<Node /> node.js
+											</li>
+											<li>
+												<Typescript /> typescript
+											</li>
+											<li>
+												<Mongodb /> mongo
+											</li>
 										</ul>
 									</div>
 								</div>
