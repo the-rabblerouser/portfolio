@@ -28,7 +28,6 @@ export default function Home() {
 					<div>
 						<a href="#about">
 							<button className="btn mt-4">
-								{/* <div>About me</div> */}
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="24"
@@ -47,37 +46,46 @@ export default function Home() {
 				</div>
 				<div className={styles.aboutMe}>
 					<h1 className={styles.aboutTitle} id="about">
-						About me
+						about me
 					</h1>
 					<div className={styles.aboutDesc}>
-						<div className={styles.aboutDesc1}>
+						<div>
 							<img
 								className={styles.img}
 								src="./F6835DBC-1D6F-45E3-A9DA-14B29B32CDB9_1_105_c.jpeg"
 								alt="Joe"
 							/>
 						</div>
-						<div className={styles.aboutDesc2}>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-								ipsam possimus nostrum error sit magni sequi. Officiis ratione
-								rerum vero quos excepturi repellendus quibusdam commodi et ipsa
-								deleniti recusandae provident perferendis eius sint quis,
-								voluptatem iure eos aperiam nihil, culpa veritatis officia nobis
-								vel. Delectus ipsum ea sint optio non.
+						<div>
+							<p style={{ marginBottom: '1.2rem' }}>
+								Hi! My name is{' '}
+								<span className={styles.contactName}>Joe McCann</span>. I am a
+								junior Full Stack Web Developer who specializes in React, Node
+								and Next.js. I love spending time building projects in
+								javascript and learning about new technologies. I am currently
+								looking for work. Send me a message, I would love to work with
+								you in the near future!
 							</p>
-							<div className={styles.aboutDesc}>
-								<div>
-									<h5>Skills</h5>
-									<ul className={styles.skills}>
-										<li>react.js</li>
-										<li>next.js</li>
-										<li>node.js</li>
-										<li>typescript</li>
-									</ul>
+							<div>
+								<div style={{ marginBottom: '0.7rem' }}>
+									<h4 className={styles.skillsTitle}>look at what i can do</h4>
+									<div className={styles.skills}>
+										<ul className={styles.skillsList}>
+											<li>javascript</li>
+											<li>react.js</li>
+											<li>next.js</li>
+										</ul>
+										<ul className={styles.skillsList}>
+											<li>node.js</li>
+											<li>typescript</li>
+											<li>mongo</li>
+										</ul>
+									</div>
 								</div>
-								<div className="contact-me">
-									<h4>Lets build something together!</h4>
+								<div>
+									<h5 className={styles.contact}>
+										lets build something together
+									</h5>
 									<a href="mailto:tojmccann@gmail.com">
 										<div className="email">tojmccann@gmail.com</div>
 									</a>

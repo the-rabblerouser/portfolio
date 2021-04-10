@@ -4,7 +4,7 @@ const LinkIcons = () => {
 	return (
 		<>
 			<div className="icons">
-				<div className="mb-1">Check me out</div>
+				<div className="mb-1">check me out</div>
 				<a href="https://github.com/the-rabblerouser">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
