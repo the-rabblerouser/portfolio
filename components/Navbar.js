@@ -39,7 +39,6 @@ const Navbar = (darkMode, toggleMode) => {
 					font-weight: 600;
 				}
 				.container {
-					width: 100%;
 					max-width: 800px;
 					margin: 0 auto;
 					padding: 0 1.4em;

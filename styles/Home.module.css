@@ -24,12 +24,63 @@
 		infinite;
 }
 
+.img {
+	height: 15rem;
+	width: 15rem;
+	border-radius: 100%;
+	margin-right: 2rem;
+}
+
+.aboutMe {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutTitle {
+	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.aboutDesc {
+	max-width: 800px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.skills {
+	list-style: none;
+}
+
 @media (max-width: 768px) {
 	.home {
 		font-size: 60px;
 	}
+
 	.slidingText {
 		font-size: 15px;
 		font-weight: 300;
+	}
+	.aboutTitle {
+		font-family: 'Inconsolata', monospace;
+		font-weight: 200;
+		align-items: center;
+		margin-top: 2.2rem;
+		margin-bottom: 0.8rem;
+	}
+
+	.aboutDesc1 {
+		margin-bottom: 1rem;
+	}
+	.aboutDesc {
+		display: flex;
+		padding: 0 0.8rem;
+		flex-direction: column;
+		max-width: 800px;
+		justify-content: center;
+		align-items: center;
 	}
 }
