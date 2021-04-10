@@ -10,7 +10,7 @@ export default function Home() {
 				<div className={styles.container}>
 					<h1 className={styles.home}>Hi, I'm Joe...</h1>
 					<p className={styles.slidingText}>
-						i'm your new{' '}
+						your new{' '}
 						<span>
 							<ReactRotatingText
 								typingInterval={140}
@@ -68,7 +68,7 @@ export default function Home() {
 							</p>
 							<div>
 								<div style={{ marginBottom: '0.7rem' }}>
-									<h4 className={styles.skillsTitle}>look at what i can do</h4>
+									<h3 className={styles.skillsTitle}>look at what i can do</h3>
 									<div className={styles.skills}>
 										<ul className={styles.skillsList}>
 											<li>javascript</li>
@@ -83,11 +83,13 @@ export default function Home() {
 									</div>
 								</div>
 								<div>
-									<h5 className={styles.contact}>
+									<h4 className={styles.contact}>
 										lets build something together
-									</h5>
+									</h4>
 									<a href="mailto:tojmccann@gmail.com">
-										<div className="email">tojmccann@gmail.com</div>
+										<div className={styles.contactName}>
+											tojmccann@gmail.com
+										</div>
 									</a>
 								</div>
 							</div>
