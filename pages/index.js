@@ -67,8 +67,8 @@ export default function Home() {
 								you in the near future!
 							</p>
 							<div>
-								<div style={{ marginBottom: '0.7rem' }}>
-									<h3 className={styles.skillsTitle}>look at what i can do</h3>
+								<div style={styles.skillSection}>
+									<h4 className={styles.skillsTitle}>look at what i can do</h4>
 									<div className={styles.skills}>
 										<ul className={styles.skillsList}>
 											<li>javascript</li>
@@ -83,9 +83,9 @@ export default function Home() {
 									</div>
 								</div>
 								<div>
-									<h4 className={styles.contact}>
+									<h5 className={styles.contact}>
 										lets build something together
-									</h4>
+									</h5>
 									<a href="mailto:tojmccann@gmail.com">
 										<div className={styles.contactName}>
 											tojmccann@gmail.com
