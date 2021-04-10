@@ -14,7 +14,7 @@ const Navbar = (darkMode, toggleMode) => {
 							<Link href="/projects">
 								<a>Projects</a>
 							</Link>
-							<Link href="/about">
+							<Link href="#about">
 								<a>About</a>
 							</Link>
 							{/* <button onClick={toggleMode}>
@@ -39,8 +39,7 @@ const Navbar = (darkMode, toggleMode) => {
 					font-weight: 600;
 				}
 				.container {
-					width: 100%;
-					max-width: 700px;
+					max-width: 800px;
 					margin: 0 auto;
 					padding: 0 1.4em;
 				}

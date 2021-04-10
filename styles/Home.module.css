@@ -24,12 +24,99 @@
 		infinite;
 }
 
+.img {
+	height: 19rem;
+	width: 19rem;
+	border-radius: 100%;
+	margin-right: 2rem;
+	margin-top: 1.5rem;
+}
+
+.contactName:hover {
+	color: var(--accent-color);
+	text-decoration: underline;
+}
+
+.aboutMe {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutTitle {
+	font-family: 'Inconsolata', monospace;
+	align-items: center;
+	margin-bottom: 2rem;
+	margin-left: 3.1rem;
+	text-decoration: underline;
+}
+
+.aboutDesc {
+	max-width: 800px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.skillsTitle {
+	font-family: 'Inconsolata', monospace;
+}
+
+.skills {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-left: -4rem;
+}
+
+.skillsList {
+	list-style: none;
+	margin-left: -11rem;
+	padding: 0;
+}
+
+.contact {
+	font-family: 'Inconsolata', monospace;
+}
+
 @media (max-width: 768px) {
 	.home {
 		font-size: 60px;
 	}
+
 	.slidingText {
 		font-size: 15px;
 		font-weight: 300;
+	}
+
+	.img {
+		height: 15rem;
+		width: 15rem;
+		margin: 0 0 1rem 0;
+	}
+
+	.aboutMe {
+		max-width: 800px;
+	}
+
+	.aboutTitle {
+		font-weight: 200;
+		align-items: center;
+		margin: 2.2rem 0 0.8rem 0;
+	}
+
+	.aboutDesc {
+		padding: 0 0.8rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.skillsList {
+		list-style: none;
+		margin: 0 0 1.3rem -8rem;
+		padding: 0;
 	}
 }
