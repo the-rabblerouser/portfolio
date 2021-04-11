@@ -1,0 +1,20 @@
+.container {
+	max-width: 800px;
+	margin: 8rem auto;
+	padding: 0 1.6rem;
+}
+
+.projectTitle {
+	font-family: 'Inconsolata', monospace;
+	margin-bottom: 3rem;
+}
+
+.projectContainer {
+	padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+	.projectTitle {
+		margin-left: 0;
+	}
+}
