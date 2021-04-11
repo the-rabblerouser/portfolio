@@ -18,7 +18,7 @@ export default function Home() {
 	const props = useSpring({
 		from: { opacity: 0 },
 		to: { opacity: 1 },
-		delay: 450,
+		delay: 350,
 	});
 
 	return (
