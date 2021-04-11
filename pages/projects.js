@@ -8,13 +8,13 @@ const projects = () => {
 	return (
 		<>
 			<div className={styles.container}>
-				<div>
-					<h1>Projects</h1>
-				</div>
-				<div className={styles.cardDiv}>
-					<ProjectCard />
-					<ProjectCard />
-				</div>
+				<h1 className={styles.projectTitle}>Projects</h1>
+			</div>
+			<div className={styles.cardContainer}>
+				<ProjectCard />
+				<ProjectCard />
+				<ProjectCard />
+				<ProjectCard />
 			</div>
 		</>
 	);

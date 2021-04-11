@@ -14,22 +14,22 @@ const ProjectCard = () => {
 
 	return (
 		<>
-			<div>
-				<div onClick={() => setFlipped((state) => !state)}>
-					<a.div
-						className={styles.c}
-						style={{ opacity: opacity.to((o) => 1 - o), transform }}>
-						Front
-					</a.div>
-					<a.div
-						className={styles.c}
-						style={{
-							opacity,
-							transform: transform.to((t) => `${t} rotateX(180deg)`),
-						}}>
-						Back
-					</a.div>
-				</div>
+			<div
+				className={styles.projectCard}
+				onClick={() => setFlipped((state) => !state)}>
+				<a.div
+					className={styles.c}
+					style={{ opacity: opacity.to((o) => 1 - o), transform }}>
+					Front
+				</a.div>
+				<a.div
+					className={styles.c}
+					style={{
+						opacity,
+						transform: transform.to((t) => `${t} rotateX(180deg)`),
+					}}>
+					Back
+				</a.div>
 			</div>
 		</>
 	);
