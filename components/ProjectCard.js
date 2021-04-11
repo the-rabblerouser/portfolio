@@ -5,7 +5,7 @@ import { useSpring, animated as a } from 'react-spring';
 import styles from '../styles/Projects.module.css';
 
 const ProjectCard = () => {
-	const [flipped, set] = useState(false);
+	const [flipped, setFlipped] = useState(false);
 	const { transform, opacity } = useSpring({
 		opacity: flipped ? 1 : 0,
 		transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
@@ -15,7 +15,7 @@ const ProjectCard = () => {
 	return (
 		<>
 			<div>
-				<div onClick={() => set((state) => !state)}>
+				<div onClick={() => setFlipped((state) => !state)}>
 					<a.div
 						className={styles.c}
 						style={{ opacity: opacity.to((o) => 1 - o), transform }}>
