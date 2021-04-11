@@ -9,8 +9,8 @@ const projects = () => {
 		<>
 			<div className={styles.container}>
 				<h1 className={styles.projectTitle}>Projects</h1>
-			</div>
-			<div className={styles.cardContainer}>
+
+				<ProjectCard />
 				<ProjectCard />
 				<ProjectCard />
 				<ProjectCard />
