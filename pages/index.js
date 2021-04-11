@@ -1,4 +1,5 @@
 import ReactRotatingText from 'react-rotating-text';
+import { useSpring, animated } from 'react-spring';
 
 import { Arrow } from '../components/Icons';
 import LinkIcons from '../components/LinkIcons';
@@ -14,10 +15,16 @@ import {
 } from '../components/Icons';
 
 export default function Home() {
+	const props = useSpring({
+		from: { opacity: 0 },
+		to: { opacity: 1 },
+		delay: 450,
+	});
+
 	return (
 		<>
 			<div data-bs-spy="scroll" data-bs-target="#about">
-				<div className={styles.container}>
+				<animated.div style={props} className={styles.container}>
 					<h1 className={styles.home}>Hi, I'm Joe...</h1>
 					<p className={styles.slidingText}>
 						your new{' '}
@@ -42,7 +49,7 @@ export default function Home() {
 							</button>
 						</a>
 					</div>
-				</div>
+				</animated.div>
 				<div className={styles.aboutMe}>
 					<h1 className={styles.aboutTitle} id="about">
 						about me
