@@ -1,6 +1,8 @@
 import ReactRotatingText from 'react-rotating-text';
-import LinkIcons from '../components/LinkIcons';
+import { useSpring, animated } from 'react-spring';
 
+import { Arrow } from '../components/Icons';
+import LinkIcons from '../components/LinkIcons';
 import styles from '../styles/Home.module.css';
 
 import {
@@ -13,10 +15,16 @@ import {
 } from '../components/Icons';
 
 export default function Home() {
+	const props = useSpring({
+		from: { opacity: 0 },
+		to: { opacity: 1 },
+		delay: 350,
+	});
+
 	return (
 		<>
 			<div data-bs-spy="scroll" data-bs-target="#about">
-				<div className={styles.container}>
+				<animated.div style={props} className={styles.container}>
 					<h1 className={styles.home}>Hi, I'm Joe...</h1>
 					<p className={styles.slidingText}>
 						your new{' '}
@@ -37,22 +45,11 @@ export default function Home() {
 					<div>
 						<a href="#about">
 							<button className="btn mt-4">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="24"
-									height="24"
-									fill="currentColor"
-									className="bi bi-arrow-down"
-									viewBox="0 0 16 16">
-									<path
-										fillRule="evenodd"
-										d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-									/>
-								</svg>
+								<Arrow />
 							</button>
 						</a>
 					</div>
-				</div>
+				</animated.div>
 				<div className={styles.aboutMe}>
 					<h1 className={styles.aboutTitle} id="about">
 						about me
