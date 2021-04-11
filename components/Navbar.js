@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Navbar = (darkMode, toggleMode) => {
+const Navbar = ({ aboutLink }) => {
+	console.log(aboutLink);
 	return (
 		<>
 			<nav>
@@ -14,7 +15,7 @@ const Navbar = (darkMode, toggleMode) => {
 							<Link href="/projects">
 								<a>Projects</a>
 							</Link>
-							<Link href="#about">
+							<Link href={aboutLink}>
 								<a>About</a>
 							</Link>
 							{/* <button onClick={toggleMode}>

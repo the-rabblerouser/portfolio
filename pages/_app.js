@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import Head from 'next/head';
 
-import Navbar from '../components/Navbar';
-
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
@@ -13,7 +11,6 @@ function MyApp({ Component, pageProps }) {
 				<title>Joe McCann</title>
 				<link rel="stylesheet" href="/favicon.ico" />
 			</Head>
-			<Navbar />
 			<Component {...pageProps} />
 			<style jsx global>{`
 				:root {

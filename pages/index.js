@@ -1,6 +1,7 @@
 import ReactRotatingText from 'react-rotating-text';
 import { useSpring, animated } from 'react-spring';
 
+import Navbar from '../components/Navbar';
 import { Arrow } from '../components/Icons';
 import LinkIcons from '../components/LinkIcons';
 import styles from '../styles/Home.module.css';
@@ -21,8 +22,11 @@ export default function Home() {
 		delay: 350,
 	});
 
+	const aboutLink = '#about';
+
 	return (
 		<>
+			<Navbar aboutLink={aboutLink} />
 			<div data-bs-spy="scroll" data-bs-target="#about">
 				<animated.div style={props} className={styles.container}>
 					<h1 className={styles.home}>Hi, I'm Joe...</h1>
