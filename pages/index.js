@@ -4,6 +4,7 @@ import { useSpring, animated, config } from 'react-spring';
 import Navbar from '../components/Navbar';
 import { Arrow } from '../components/Icons';
 import LinkIcons from '../components/LinkIcons';
+
 import styles from '../styles/Home.module.css';
 
 import {
@@ -44,7 +45,7 @@ export default function Home() {
 						</span>
 						.js developer
 					</p>
-					<div className={styles.links}>
+					<div>
 						<LinkIcons />
 					</div>
 					<div>
