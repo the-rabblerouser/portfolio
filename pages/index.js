@@ -50,10 +50,10 @@ export default function Home() {
 								deletingInterval={140}
 								pause={2000}
 								color="#82ADC9"
-								items={['react', 'next', 'node']}
+								items={['frontend', 'backend', 'fullstack']}
 							/>
 						</span>
-						.js developer
+						developer
 					</p>
 					<div>
 						<LinkIcons />
