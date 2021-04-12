@@ -32,7 +32,7 @@ export default function Home() {
 			await next({ transform: 'translate3d(0, 15px, 0)' });
 		},
 		from: { transform: 'translate3d(0, 15px, 0)' },
-		config: config.wobbly,
+		config: { duration: 1500 },
 		loop: true,
 	});
 
