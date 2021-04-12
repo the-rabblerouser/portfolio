@@ -1,4 +1,5 @@
 import { useSpring, animated, config } from 'react-spring';
+// import Skeleton from 'react-loading-skeleton';
 
 import Navbar from '../components/Navbar';
 import ProjectCard from '../components/ProjectCard';
