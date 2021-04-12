@@ -1,17 +1,27 @@
-import { useState } from 'react';
+import { useSpring, animated, config } from 'react-spring';
+// import Skeleton from 'react-loading-skeleton';
 
 import Navbar from '../components/Navbar';
 import ProjectCard from '../components/ProjectCard';
 
 import styles from '../styles/Projects.module.css';
 
+const aboutLink = 'http://localhost:3000/#about';
+
 const projects = () => {
-	const aboutLink = 'http://localhost:3000/#about';
+	const titleAnimation = useSpring({
+		from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
+		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
+		delay: 350,
+		config: config.slow,
+	});
 	return (
 		<>
 			<Navbar aboutLink={aboutLink} />
 			<div className={styles.container}>
-				<h1 className={styles.projectTitle}>Projects</h1>
+				<animated.h1 className={styles.projectTitle} style={titleAnimation}>
+					Projects
+				</animated.h1>
 
 				<ProjectCard />
 				<ProjectCard />
