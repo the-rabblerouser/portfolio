@@ -1,5 +1,5 @@
 import ReactRotatingText from 'react-rotating-text';
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated, config } from 'react-spring';
 
 import Navbar from '../components/Navbar';
 import { Arrow } from '../components/Icons';
@@ -15,14 +15,15 @@ import {
 	Next,
 } from '../components/Icons';
 
+const aboutLink = '#about';
+
 export default function Home() {
 	const props = useSpring({
-		from: { opacity: 0 },
-		to: { opacity: 1 },
+		from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
+		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
 		delay: 350,
+		config: config.slow,
 	});
-
-	const aboutLink = '#about';
 
 	return (
 		<>
