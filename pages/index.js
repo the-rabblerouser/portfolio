@@ -19,18 +19,28 @@ import {
 const aboutLink = '#about';
 
 export default function Home() {
-	const props = useSpring({
+	const homeAnimation = useSpring({
 		from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
 		delay: 350,
 		config: config.slow,
 	});
 
+	const arrowAnimation = useSpring({
+		to: async (next) => {
+			await next({ transform: 'translate3d(0, 5px, 0)' });
+			await next({ transform: 'translate3d(0, 15px, 0)' });
+		},
+		from: { transform: 'translate3d(0, 15px, 0)' },
+		config: config.wobbly,
+		loop: true,
+	});
+
 	return (
 		<>
 			<Navbar aboutLink={aboutLink} />
 			<div data-bs-spy="scroll" data-bs-target="#about">
-				<animated.div style={props} className={styles.container}>
+				<animated.div style={homeAnimation} className={styles.container}>
 					<h1 className={styles.home}>Hi, I'm Joe...</h1>
 					<p className={styles.slidingText}>
 						your new{' '}
@@ -48,11 +58,11 @@ export default function Home() {
 					<div>
 						<LinkIcons />
 					</div>
-					<div>
+					<div className={styles.arrowButton}>
 						<a href="#about">
-							<button className="btn mt-4">
+							<animated.div style={arrowAnimation}>
 								<Arrow />
-							</button>
+							</animated.div>
 						</a>
 					</div>
 				</animated.div>
