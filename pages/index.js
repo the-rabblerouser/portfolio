@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ReactRotatingText from 'react-rotating-text';
 import { useSpring, animated, config } from 'react-spring';
 
@@ -93,7 +94,7 @@ export default function Home() {
 								<h4 className={styles.skillsTitle}>look at what i can do</h4>
 								<div className={styles.skills}>
 									<div>
-										<h5 className={styles.skillsTitle}>languages</h5>
+										<h5 className={styles.skillsSubTitle}>languages</h5>
 										<ul className={styles.skillsList}>
 											<li>
 												<Javascript /> javascript
@@ -107,7 +108,7 @@ export default function Home() {
 										</ul>
 									</div>
 									<div>
-										<h5 className={styles.skillsTitle}>technologies</h5>
+										<h5 className={styles.skillsSubTitle}>technologies</h5>
 										<ul className={styles.skillsList}>
 											<li>
 												<React /> react.js
@@ -126,14 +127,6 @@ export default function Home() {
 										</ul>
 									</div>
 								</div>
-							</div>
-							<div>
-								<h5 className={styles.contact}>
-									lets build something together
-								</h5>
-								<a href="mailto:tojmccann@gmail.com">
-									<div className={styles.contactName}>tojmccann@gmail.com</div>
-								</a>
 							</div>
 						</div>
 					</div>
