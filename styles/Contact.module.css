@@ -7,17 +7,85 @@
 	align-items: center;
 }
 
-.contactName:hover {
-	color: var(--accent-color);
-	text-decoration: underline;
+.contactTitle {
+	font-family: 'Inconsolata', monospace;
+	margin-bottom: 2rem;
+	margin-left: -9rem;
 }
 
-.contact {
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.formGroup {
+	margin-bottom: 1rem;
+	width: 30rem;
+}
+
+.label {
 	font-family: 'Inconsolata', monospace;
 }
 
-@media (max-width: 768px) {
-	.contactName {
-		margin-bottom: -1.2rem;
-	}
+.input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: 1px solid #202020;
+	outline: none;
+	border-radius: 4px;
+	background-color: var(--bg-color);
 }
+
+.textArea {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #202020;
+	outline: none;
+	border-radius: 4px;
+	background-color: var(--bg-color);
+}
+
+.submitButton {
+	margin-top: 3rem;
+	margin-right: 21rem;
+	background: none;
+	border: 1px solid #202020;
+	border-radius: 4px;
+	height: 3rem;
+	width: 9rem;
+}
+
+@media (max-width: 768px) {
+	.contactTitle {
+		margin-left: 0;
+	}
+
+	.formGroup {
+		margin-bottom: 1rem;
+		width: 22rem;
+	}
+
+	.submitButton {
+		margin-top: 3rem;
+		margin-right: 14rem;
+		background: none;
+		border: 1px solid #202020;
+		border-radius: 4px;
+		height: 3rem;
+		width: 8rem;
+	}
+
+	/* .contactName {
+		margin-bottom: -1.2rem;
+	} */
+}
+
+/* .contactName:hover {
+	color: var(--accent-color);
+	text-decoration: underline;
+} */

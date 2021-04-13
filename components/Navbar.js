@@ -20,6 +20,9 @@ const Navbar = ({ aboutLink }) => {
 							<Link href={aboutLink}>
 								<a className={styles.links}>About</a>
 							</Link>
+							<Link href="/contact">
+								<a className={styles.links}>Contact</a>
+							</Link>
 							{/* <button className={styles.button} onClick={toggleMode}>
 								{!darkMode ? <Brightness3 /> : <WbSunny />}
 								<i className={styles.icons}>
