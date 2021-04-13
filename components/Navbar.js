@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import styles from '../styles/Navbar.module.css';
 
-const Navbar = () => {
+const Navbar = ({ darkMode, toggleMode }) => {
 	return (
 		<>
 			<nav className={styles.nav}>
@@ -22,12 +22,12 @@ const Navbar = () => {
 							<Link href="/contact">
 								<a className={styles.links}>contact</a>
 							</Link>
-							{/* <button className={styles.button} onClick={toggleMode}>
-								{!darkMode ? <Brightness3 /> : <WbSunny />}
-								<i className={styles.icons}>
+							<button className={styles.button} onClick={toggleMode}>
+								{!darkMode ? 'D' : 'L'}
+								{/* <i className={styles.icons}>
 									{!darkMode ? 'brightness_2' : 'brightness_high'}
-								</i>
-							</button> */}
+								</i> */}
+							</button>
 						</div>
 					</div>
 				</div>

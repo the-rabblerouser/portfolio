@@ -1,32 +1,32 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 
 import Navbar from '../components/Navbar';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-	const [darkMode, setDarkMode] = useState();
+	const [darkMode, setDarkMode] = useState(getMode());
 
-	// const toggleMode = () => setDarkMode((prevMode) => !prevMode);
+	const toggleMode = () => setDarkMode((prevMode) => !prevMode);
 
-	// function getMode() {
-	// 	if (typeof window !== 'undefined') {
-	// 		const saveMode = JSON.parse(localStorage.getItem('darkMode'));
+	function getMode() {
+		if (typeof window !== 'undefined') {
+			const saveMode = JSON.stringify(localStorage.getItem('darkMode'));
 
-	// 		return saveMode || false;
-	// 	}
-	// }
+			return saveMode || false;
+		}
+	}
 
-	// useEffect(() => {
-	// 	localStorage.setItem('darkMode', JSON.stringify(darkMode));
-	// }, [darkMode]);
+	useEffect(() => {
+		localStorage.setItem('darkMode', JSON.stringify(darkMode));
+	}, [darkMode]);
 	return (
 		<>
 			<Head>
 				<title>Joe McCann</title>
 				<link rel="stylesheet" href="/favicon.ico" />
 			</Head>
-			<Navbar />
+			<Navbar darkMode={darkMode} toggleMode={toggleMode} />
 			<Component {...pageProps} />
 			<style jsx global>{`
 				:root {
