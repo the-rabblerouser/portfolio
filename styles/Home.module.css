@@ -27,12 +27,7 @@
 }
 
 .arrowButton {
-	padding-top: 2.5rem;
-}
-
-.arrowButton :hover {
-	color: inherit;
-	text-decoration: none;
+	padding-top: 1rem;
 }
 
 /* About Section */

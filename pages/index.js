@@ -3,7 +3,6 @@ import ReactRotatingText from 'react-rotating-text';
 import { useSpring, animated, config } from 'react-spring';
 
 import { Arrow } from '../components/Icons';
-import LinkIcons from '../components/LinkIcons';
 
 import styles from '../styles/Home.module.css';
 
@@ -52,9 +51,7 @@ export default function Home() {
 						</span>
 						developer
 					</p>
-					<div>
-						<LinkIcons />
-					</div>
+					<div style={{ color: 'var(--font-color)' }}>check me out</div>
 					<div className={styles.arrowButton}>
 						<a href="#about">
 							<animated.div style={arrowAnimation}>

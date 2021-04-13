@@ -3,7 +3,7 @@ export const Arrow = () => (
 		xmlns="http://www.w3.org/2000/svg"
 		width="24"
 		height="24"
-		fill="currentColor"
+		fill="var(--font-color)"
 		className="bi bi-arrow-down"
 		viewBox="0 0 16 16">
 		<path
