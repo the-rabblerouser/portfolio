@@ -68,6 +68,11 @@
 	justify-content: space-between;
 }
 
+.skillSection {
+	display: flex;
+	flex-direction: column;
+}
+
 .skillsTitle {
 	font-family: 'Inconsolata', monospace;
 }
@@ -75,13 +80,12 @@
 .skills {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	margin-left: -4rem;
+	justify-content: space-between;
+	width: 21rem;
 }
 
 .skillsList {
 	list-style: none;
-	margin-left: -5.5rem;
 	padding: 0;
 }
 
@@ -130,8 +134,13 @@
 		align-items: center;
 	}
 
+	.skillSection {
+		align-items: center;
+	}
+
 	.skills {
 		margin-bottom: -1.2rem;
+		width: 18.8rem;
 	}
 
 	.skillsList {
