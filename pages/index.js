@@ -2,7 +2,6 @@ import Link from 'next/link';
 import ReactRotatingText from 'react-rotating-text';
 import { useSpring, animated, config } from 'react-spring';
 
-import Navbar from '../components/Navbar';
 import { Arrow } from '../components/Icons';
 import LinkIcons from '../components/LinkIcons';
 
@@ -16,8 +15,6 @@ import {
 	Mongodb,
 	Next,
 } from '../components/Icons';
-
-const aboutLink = '#about';
 
 export default function Home() {
 	const homeAnimation = useSpring({
@@ -39,7 +36,6 @@ export default function Home() {
 
 	return (
 		<>
-			<Navbar aboutLink={aboutLink} />
 			<div data-bs-spy="scroll" data-bs-target="#about">
 				<animated.div style={homeAnimation} className={styles.container}>
 					<h1 className={styles.home}>Hi, I'm Joe...</h1>
@@ -114,12 +110,10 @@ export default function Home() {
 												<React /> react.js
 											</li>
 											<li>
-												<Javascript />
-												next.js
+												<Javascript /> next.js
 											</li>
 											<li>
-												<Javascript />
-												Express
+												<Javascript /> express
 											</li>
 											<li>
 												<Mongodb /> mongodb
