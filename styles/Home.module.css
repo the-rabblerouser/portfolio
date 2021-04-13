@@ -68,30 +68,31 @@
 	justify-content: space-between;
 }
 
+.skillSection {
+	display: flex;
+	flex-direction: column;
+}
+
 .skillsTitle {
 	font-family: 'Inconsolata', monospace;
+	margin-bottom: 1.3rem;
+}
+
+.skillsSubTitle {
+	font-family: 'Inconsolata', monospace;
+	margin-bottom: 1rem;
 }
 
 .skills {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	margin-left: -4rem;
+	justify-content: space-between;
+	width: 21rem;
 }
 
 .skillsList {
 	list-style: none;
-	margin-left: -5.5rem;
 	padding: 0;
-}
-
-.contactName:hover {
-	color: var(--accent-color);
-	text-decoration: underline;
-}
-
-.contact {
-	font-family: 'Inconsolata', monospace;
 }
 
 @media (max-width: 768px) {
@@ -108,8 +109,8 @@
 	/* About Section */
 
 	.img {
-		height: 15rem;
-		width: 15rem;
+		height: 11rem;
+		width: 11rem;
 		margin: 0 0 1rem 0;
 	}
 
@@ -130,8 +131,13 @@
 		align-items: center;
 	}
 
+	.skillSection {
+		align-items: center;
+	}
+
 	.skills {
 		margin-bottom: -1.2rem;
+		width: 18.8rem;
 	}
 
 	.skillsList {

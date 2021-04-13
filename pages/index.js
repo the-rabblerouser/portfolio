@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ReactRotatingText from 'react-rotating-text';
 import { useSpring, animated, config } from 'react-spring';
 
@@ -88,43 +89,43 @@ export default function Home() {
 								looking for work. Send me a message, I would love to work with
 								you in the near future!
 							</p>
-							<div>
-								<div style={styles.skillSection}>
-									<h4 className={styles.skillsTitle}>look at what i can do</h4>
-									<div className={styles.skills}>
+
+							<div className={styles.skillSection}>
+								<h4 className={styles.skillsTitle}>look at what i can do</h4>
+								<div className={styles.skills}>
+									<div>
+										<h5 className={styles.skillsSubTitle}>languages</h5>
 										<ul className={styles.skillsList}>
 											<li>
 												<Javascript /> javascript
 											</li>
-											<li>
-												<React /> react.js
-											</li>
-											<li>
-												<Javascript /> next.js
-											</li>
-										</ul>
-										<ul className={styles.skillsList}>
 											<li>
 												<Node /> node.js
 											</li>
 											<li>
 												<Typescript /> typescript
 											</li>
+										</ul>
+									</div>
+									<div>
+										<h5 className={styles.skillsSubTitle}>technologies</h5>
+										<ul className={styles.skillsList}>
 											<li>
-												<Mongodb /> mongo
+												<React /> react.js
+											</li>
+											<li>
+												<Javascript />
+												next.js
+											</li>
+											<li>
+												<Javascript />
+												Express
+											</li>
+											<li>
+												<Mongodb /> mongodb
 											</li>
 										</ul>
 									</div>
-								</div>
-								<div>
-									<h5 className={styles.contact}>
-										lets build something together
-									</h5>
-									<a href="mailto:tojmccann@gmail.com">
-										<div className={styles.contactName}>
-											tojmccann@gmail.com
-										</div>
-									</a>
 								</div>
 							</div>
 						</div>
