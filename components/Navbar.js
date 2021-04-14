@@ -25,9 +25,6 @@ const Navbar = ({ darkMode, toggleMode }) => {
 							</Link>
 							<button className={styles.button} onClick={toggleMode}>
 								{darkMode ? <Sun /> : <Moon />}
-								{/* <i className={styles.icons}>
-									{!darkMode ? 'brightness_2' : 'brightness_high'}
-								</i> */}
 							</button>
 						</div>
 					</div>
