@@ -1,6 +1,5 @@
 import { useSpring, animated, config } from 'react-spring';
 import useSwr from 'swr';
-// import Skeleton from 'react-loading-skeleton';
 
 import ProjectCard from '../components/ProjectCard';
 import Footer from '../components/Footer';
