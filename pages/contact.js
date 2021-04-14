@@ -2,8 +2,6 @@ import React from 'react';
 
 import styles from '../styles/Contact.module.css';
 
-const aboutLink = 'http://localhost:3000/#about';
-
 const contact = () => {
 	return (
 		<>

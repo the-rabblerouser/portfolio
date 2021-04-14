@@ -15,12 +15,14 @@
 	margin: 0;
 	color: var(--font-color);
 }
+
 .slidingText {
 	font-size: 33px;
 	font-family: 'Inconsolata', monospace;
 	font-weight: 200;
 	color: var(--font-color);
 }
+
 .react-rotating-text-cursor {
 	animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
 		infinite;
@@ -46,6 +48,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	color: var(--font-color);
 }
 
 .aboutTitle {
