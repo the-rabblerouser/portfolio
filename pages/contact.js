@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Navbar from '../components/Navbar';
-
 import styles from '../styles/Contact.module.css';
 
 const aboutLink = 'http://localhost:3000/#about';
@@ -9,7 +7,6 @@ const aboutLink = 'http://localhost:3000/#about';
 const contact = () => {
 	return (
 		<>
-			<Navbar aboutLink={aboutLink} />
 			<div className={styles.container}>
 				<h5 className={styles.contactTitle}>lets build something together</h5>
 				<form className={styles.form} action="">

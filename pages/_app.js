@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
 
 	function getMode() {
 		if (typeof window !== 'undefined') {
-			const saveMode = JSON.stringify(localStorage.getItem('darkMode'));
+			const saveMode = JSON.parse(localStorage.getItem('darkMode'));
 
 			return saveMode || false;
 		}
@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>Joe McCann</title>
-				<link rel="stylesheet" href="/favicon.ico" />
+				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Navbar darkMode={darkMode} toggleMode={toggleMode} />
 			<Component {...pageProps} />
