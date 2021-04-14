@@ -2,7 +2,7 @@ import ReactRotatingText from 'react-rotating-text';
 import { useSpring, animated, config } from 'react-spring';
 import { Link } from 'react-scroll';
 
-import { Arrow } from '../components/Icons';
+import { Arrow, Check } from '../components/Icons';
 import {
 	Node,
 	React,
@@ -92,13 +92,13 @@ export default function Home() {
 									<h5 className={styles.skillsSubTitle}>languages</h5>
 									<ul className={styles.skillsList}>
 										<li>
-											<Javascript /> javascript
+											<Check /> javascript
 										</li>
 										<li>
-											<Node /> node.js
+											<Check /> typescript
 										</li>
 										<li>
-											<Typescript /> typescript
+											<Check /> node.js
 										</li>
 									</ul>
 								</div>
@@ -106,16 +106,16 @@ export default function Home() {
 									<h5 className={styles.skillsSubTitle}>technologies</h5>
 									<ul className={styles.skillsList}>
 										<li>
-											<React /> react.js
+											<Check /> react.js
 										</li>
 										<li>
-											<Javascript /> next.js
+											<Check /> next.js
 										</li>
 										<li>
-											<Javascript /> express
+											<Check /> express
 										</li>
 										<li>
-											<Mongodb /> mongodb
+											<Check /> mongodb
 										</li>
 									</ul>
 								</div>
