@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
+import { Sun, Moon } from '../components/Icons';
 import styles from '../styles/Navbar.module.css';
 
 const Navbar = ({ darkMode, toggleMode }) => {
@@ -23,7 +24,7 @@ const Navbar = ({ darkMode, toggleMode }) => {
 								<a className={styles.links}>contact</a>
 							</Link>
 							<button className={styles.button} onClick={toggleMode}>
-								{!darkMode ? 'D' : 'L'}
+								{darkMode ? <Sun /> : <Moon />}
 								{/* <i className={styles.icons}>
 									{!darkMode ? 'brightness_2' : 'brightness_high'}
 								</i> */}

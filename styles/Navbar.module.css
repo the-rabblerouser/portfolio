@@ -58,7 +58,8 @@
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
-	margin-left: 6px;
+	margin-left: 0.2rem;
+	margin-bottom: 0.15rem;
 }
 .button:focus {
 	outline: none;
