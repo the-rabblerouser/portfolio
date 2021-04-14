@@ -2,6 +2,8 @@ import React from 'react';
 
 import { useSpring, animated, config } from 'react-spring';
 
+import Footer from '../components/Footer';
+
 import styles from '../styles/Contact.module.css';
 
 const contact = () => {

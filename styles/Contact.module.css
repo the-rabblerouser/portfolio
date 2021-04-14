@@ -12,6 +12,8 @@
 	margin-bottom: 2rem;
 	margin-left: -9rem;
 	color: var(--font-color);
+	text-decoration: underline;
+	text-decoration-color: var(--accent-color);
 }
 
 .form {
