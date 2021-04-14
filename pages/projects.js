@@ -3,6 +3,8 @@ import { useSpring, animated, config } from 'react-spring';
 
 import ProjectCard from '../components/ProjectCard';
 
+import Footer from '../components/Footer';
+
 import styles from '../styles/Projects.module.css';
 
 const projects = () => {
@@ -16,7 +18,7 @@ const projects = () => {
 		<>
 			<div className={styles.container}>
 				<animated.h1 className={styles.projectTitle} style={titleAnimation}>
-					Projects
+					projects
 				</animated.h1>
 
 				<ProjectCard />
@@ -25,6 +27,7 @@ const projects = () => {
 				<ProjectCard />
 				<ProjectCard />
 			</div>
+			<Footer />
 		</>
 	);
 };

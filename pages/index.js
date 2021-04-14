@@ -3,6 +3,7 @@ import { useSpring, animated, config } from 'react-spring';
 import { Link } from 'react-scroll';
 
 import { Arrow, Check } from '../components/Icons';
+import Footer from '../components/Footer';
 
 import styles from '../styles/Home.module.css';
 
@@ -131,6 +132,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 }

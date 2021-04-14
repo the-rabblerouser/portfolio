@@ -9,6 +9,7 @@
 	font-family: 'Inconsolata', monospace;
 	margin-bottom: 3rem;
 	text-decoration: underline;
+	text-decoration-color: var(--accent-color);
 }
 
 .projectContainer {
