@@ -8,6 +8,7 @@
 .projectTitle {
 	font-family: 'Inconsolata', monospace;
 	margin-bottom: 3rem;
+	text-decoration: underline;
 }
 
 .projectContainer {
