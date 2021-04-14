@@ -7,9 +7,9 @@ import styles from '../styles/Projects.module.css';
 
 const projects = () => {
 	const titleAnimation = useSpring({
-		from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
+		from: { transform: 'translate3d(30px, 0, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
-		delay: 350,
+		delay: 150,
 		config: config.slow,
 	});
 	return (

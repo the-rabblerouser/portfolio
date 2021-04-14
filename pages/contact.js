@@ -1,8 +1,17 @@
 import React from 'react';
 
+import { useSpring, animated, config } from 'react-spring';
+
 import styles from '../styles/Contact.module.css';
 
 const contact = () => {
+	const titleAnimation = useSpring({
+		from: { transform: 'translate3d(30px, 0, 0)', opacity: 0 },
+		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
+		delay: 150,
+		config: config.slow,
+	});
+
 	const onSubmit = (e) => {
 		e.preventDefault();
 	};
@@ -10,7 +19,9 @@ const contact = () => {
 	return (
 		<>
 			<div className={styles.container}>
-				<h5 className={styles.contactTitle}>lets build something together</h5>
+				<animated.h5 style={titleAnimation} className={styles.contactTitle}>
+					lets build something together
+				</animated.h5>
 				<form className={styles.form} onSubmit={onSubmit}>
 					<div className={styles.formGroup}>
 						<label className={styles.label} htmlFor="name">

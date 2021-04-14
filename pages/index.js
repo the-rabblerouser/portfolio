@@ -2,14 +2,7 @@ import ReactRotatingText from 'react-rotating-text';
 import { useSpring, animated, config } from 'react-spring';
 import { Link } from 'react-scroll';
 
-import { Arrow } from '../components/Icons';
-import {
-	Node,
-	React,
-	Typescript,
-	Javascript,
-	Mongodb,
-} from '../components/Icons';
+import { Arrow, Check } from '../components/Icons';
 
 import styles from '../styles/Home.module.css';
 
@@ -17,7 +10,7 @@ export default function Home() {
 	const homeAnimation = useSpring({
 		from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
-		delay: 350,
+		delay: 150,
 		config: config.slow,
 	});
 
@@ -29,6 +22,13 @@ export default function Home() {
 		from: { transform: 'translate3d(0, 15px, 0)' },
 		config: { duration: 1500 },
 		loop: true,
+	});
+
+	const aboutAnimation = useSpring({
+		from: { transform: 'translate3d(30px, 0, 0)', opacity: 0 },
+		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
+		delay: 150,
+		config: config.slow,
 	});
 
 	return (
@@ -63,9 +63,12 @@ export default function Home() {
 				</div>
 			</animated.div>
 			<div className={styles.aboutMe}>
-				<h1 className={styles.aboutTitle} id="about">
+				<animated.h1
+					style={aboutAnimation}
+					className={styles.aboutTitle}
+					id="about">
 					about me
-				</h1>
+				</animated.h1>
 				<div className={styles.aboutDesc}>
 					<div>
 						<img
@@ -90,34 +93,38 @@ export default function Home() {
 							<div className={styles.skills}>
 								<div>
 									<h5 className={styles.skillsSubTitle}>languages</h5>
-									<ul className={styles.skillsList}>
+									<animated.ul
+										style={homeAnimation}
+										className={styles.skillsList}>
 										<li>
-											<Javascript /> javascript
+											<Check /> javascript
 										</li>
 										<li>
-											<Node /> node.js
+											<Check /> typescript
 										</li>
 										<li>
-											<Typescript /> typescript
+											<Check /> node.js
 										</li>
-									</ul>
+									</animated.ul>
 								</div>
 								<div>
 									<h5 className={styles.skillsSubTitle}>technologies</h5>
-									<ul className={styles.skillsList}>
+									<animated.ul
+										style={homeAnimation}
+										className={styles.skillsList}>
 										<li>
-											<React /> react.js
+											<Check /> react.js
 										</li>
 										<li>
-											<Javascript /> next.js
+											<Check /> next.js
 										</li>
 										<li>
-											<Javascript /> express
+											<Check /> express
 										</li>
 										<li>
-											<Mongodb /> mongodb
+											<Check /> mongodb
 										</li>
-									</ul>
+									</animated.ul>
 								</div>
 							</div>
 						</div>
