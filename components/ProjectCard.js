@@ -1,27 +1,33 @@
-import { useState } from 'react';
-
-import { Github } from '../components/Icons';
-
 import styles from '../styles/Projects.module.css';
 
-const ProjectCard = () => {
+const ProjectCard = ({ data }) => {
+	console.log(data);
 	return (
 		<>
-			<div className={styles.projectContainer}>
-				<div>
-					<a>
-						<h4>Project</h4>
-					</a>
-					<div>
+			{data.map(({ _id, title, repository, description, tools, site }) => {
+				return (
+					<div key={_id} className={styles.projectContainer}>
 						<div>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-							totam ipsum asperiores at? Ratione a quisquam, consequatur sed
-							dolor debitis!{' '}
+							<div className={styles.projectHeader}>
+								<a className={styles.links} href={site}>
+									<h4>{title}</h4>
+								</a>
+								<div className={styles.code}>
+									<span>-</span>
+									<a className={styles.links} href={repository}>
+										{' '}
+										code
+									</a>
+								</div>
+							</div>
+							<div>
+								<div className={styles.tools}>{tools}</div>
+								<div>{description}</div>
+							</div>
 						</div>
-						<div>React | Next</div>
 					</div>
-				</div>
-			</div>
+				);
+			})}
 		</>
 	);
 };
