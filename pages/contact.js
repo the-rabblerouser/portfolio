@@ -3,11 +3,15 @@ import React from 'react';
 import styles from '../styles/Contact.module.css';
 
 const contact = () => {
+	const onSubmit = (e) => {
+		e.preventDefault();
+	};
+
 	return (
 		<>
 			<div className={styles.container}>
 				<h5 className={styles.contactTitle}>lets build something together</h5>
-				<form className={styles.form} action="">
+				<form className={styles.form} onSubmit={onSubmit}>
 					<div className={styles.formGroup}>
 						<label className={styles.label} htmlFor="name">
 							Name

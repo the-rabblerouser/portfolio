@@ -14,11 +14,11 @@ const Navbar = ({ darkMode, toggleMode }) => {
 							<a className={styles.title}>joemccann.dev</a>
 						</Link>
 						<div className={styles.sectionNavs}>
-							<Link href="/projects">
-								<a className={styles.links}>projects</a>
-							</Link>
 							<Link href="/#about">
 								<a className={styles.links}>about</a>
+							</Link>
+							<Link href="/projects">
+								<a className={styles.links}>projects</a>
 							</Link>
 							<Link href="/contact">
 								<a className={styles.links}>contact</a>
