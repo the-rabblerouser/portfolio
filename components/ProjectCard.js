@@ -1,7 +1,6 @@
 import styles from '../styles/Projects.module.css';
 
 const ProjectCard = ({ data }) => {
-	console.log(data);
 	return (
 		<>
 			{data.map(({ _id, title, repository, description, tools, site }) => {
