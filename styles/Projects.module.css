@@ -1,8 +1,30 @@
 .container {
 	max-width: 800px;
-	margin: 8rem auto;
+	margin: 7rem auto;
 	padding: 0 1.6rem;
 	color: var(--font-color);
+}
+
+.projectHeader {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.code {
+	margin-top: 0.25rem;
+	margin-left: 0.4rem;
+}
+
+.links {
+	text-decoration: none;
+}
+
+.links:hover {
+	color: var(--font-color);
+	text-decoration-color: var(--accent-color);
 }
 
 .projectTitle {
@@ -14,6 +36,10 @@
 
 .projectContainer {
 	padding-bottom: 3rem;
+}
+
+.tools {
+	margin: 0.2rem 0 0.8rem 0;
 }
 
 @media (max-width: 768px) {

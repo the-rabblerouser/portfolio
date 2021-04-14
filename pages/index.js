@@ -109,7 +109,7 @@ export default function Home() {
 									</animated.ul>
 								</div>
 								<div>
-									<h5 className={styles.skillsSubTitle}>technologies</h5>
+									<h5 className={styles.skillsSubTitle}>dev tools</h5>
 									<animated.ul
 										style={homeAnimation}
 										className={styles.skillsList}>

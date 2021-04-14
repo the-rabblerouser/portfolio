@@ -22,12 +22,12 @@ const LinkIcons = () => {
 						align-items: center;
 						width: 4.5rem;
 						margin-bottom: 1rem;
-						color: var(--accent-color);
+						color: var(--font-color);
 					}
 
 					.icons a:hover {
 						transition: color 0.2s ease;
-						color: #82adc9;
+						color: var(--accent-color);
 					}
 				`}
 			</style>

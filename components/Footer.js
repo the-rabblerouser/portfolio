@@ -19,7 +19,7 @@ const Footer = ({ position }) => {
 			<style jsx>
 				{`
 					.container {
-						max-width: 800px;
+						max-width: 775px;
 					}
 					.footer-content {
 						display: flex;
@@ -27,7 +27,7 @@ const Footer = ({ position }) => {
 						align-items: center;
 						font-family: 'Inconsolata', monospace;
 						font-size: 14px;
-						margin-bottom: 0.3rem;
+						margin-bottom: 0.2rem;
 					}
 					footer p {
 						color: var(--font-color);
