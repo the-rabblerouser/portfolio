@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
+import { Sun, Moon } from '../components/Icons';
 import styles from '../styles/Navbar.module.css';
 
-const Navbar = ({ aboutLink }) => {
-	console.log(aboutLink);
+const Navbar = ({ darkMode, toggleMode }) => {
 	return (
 		<>
 			<nav className={styles.nav}>
@@ -14,21 +14,18 @@ const Navbar = ({ aboutLink }) => {
 							<a className={styles.title}>joemccann.dev</a>
 						</Link>
 						<div className={styles.sectionNavs}>
-							<Link href="/projects">
-								<a className={styles.links}>Projects</a>
+							<Link href="/#about">
+								<a className={styles.links}>about</a>
 							</Link>
-							<Link href={aboutLink}>
-								<a className={styles.links}>About</a>
+							<Link href="/projects">
+								<a className={styles.links}>projects</a>
 							</Link>
 							<Link href="/contact">
-								<a className={styles.links}>Contact</a>
+								<a className={styles.links}>contact</a>
 							</Link>
-							{/* <button className={styles.button} onClick={toggleMode}>
-								{!darkMode ? <Brightness3 /> : <WbSunny />}
-								<i className={styles.icons}>
-									{!darkMode ? 'brightness_2' : 'brightness_high'}
-								</i>
-							</button> */}
+							<button className={styles.button} onClick={toggleMode}>
+								{darkMode ? <Sun /> : <Moon />}
+							</button>
 						</div>
 					</div>
 				</div>

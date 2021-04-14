@@ -1,18 +1,17 @@
 import React from 'react';
 
-import Navbar from '../components/Navbar';
-
 import styles from '../styles/Contact.module.css';
 
-const aboutLink = 'http://localhost:3000/#about';
-
 const contact = () => {
+	const onSubmit = (e) => {
+		e.preventDefault();
+	};
+
 	return (
 		<>
-			<Navbar aboutLink={aboutLink} />
 			<div className={styles.container}>
 				<h5 className={styles.contactTitle}>lets build something together</h5>
-				<form className={styles.form} action="">
+				<form className={styles.form} onSubmit={onSubmit}>
 					<div className={styles.formGroup}>
 						<label className={styles.label} htmlFor="name">
 							Name

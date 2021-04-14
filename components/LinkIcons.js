@@ -6,7 +6,6 @@ const LinkIcons = () => {
 	return (
 		<>
 			<div className="icons">
-				<div className="mb-1">check me out</div>
 				<a href="https://github.com/the-rabblerouser">
 					<Github width={35} height={35} />
 				</a>
