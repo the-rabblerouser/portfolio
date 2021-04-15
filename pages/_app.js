@@ -6,28 +6,25 @@ import Navbar from '../components/Navbar';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-	const [darkMode, setDarkMode] = useState(getMode());
-
-	const toggleMode = () => setDarkMode((prevMode) => !prevMode);
-
-	function getMode() {
-		if (typeof window !== 'undefined') {
-			const saveMode = JSON.parse(localStorage.getItem('darkMode'));
-
-			return saveMode || false;
-		}
-	}
+	const [darkMode, setDarkMode] = useState(false);
 
 	useEffect(() => {
-		localStorage.setItem('darkMode', JSON.stringify(darkMode));
+		if (
+			typeof window !== 'undefined' &&
+			window.matchMedia &&
+			window.matchMedia('(prefers-color-scheme: dark)').matches
+		) {
+			setDarkMode(true);
+		}
 	}, [darkMode]);
+
 	return (
 		<>
 			<Head>
 				<title>Joe McCann</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Navbar darkMode={darkMode} toggleMode={toggleMode} />
+			<Navbar />
 			<Component {...pageProps} />
 
 			<style jsx global>{`
@@ -36,9 +33,6 @@ function MyApp({ Component, pageProps }) {
 					--font-color: ${!darkMode ? '#202020' : '#fff'};
 					--accent-color: #82adc9;
 					--button-color: ${!darkMode ? '#fff' : '#82adc9'};
-					--projects-title-color: ${!darkMode ? '#82adc9' : '#1c1c1c'};
-					--card-color: ${!darkMode ? '#fff' : '#1c1c1c'};
-					--card-description-color: ${!darkMode ? '#1c1c1c' : '#fff'};
 				}
 			`}</style>
 		</>
