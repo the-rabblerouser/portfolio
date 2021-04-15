@@ -9,7 +9,11 @@ import styles from '../styles/Contact.module.css';
 const contact = () => {
 	const router = useRouter();
 
-	const { register, handleSubmit } = useForm();
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm();
 
 	const onSubmit = (data) => {
 		router.reload();
@@ -40,6 +44,7 @@ const contact = () => {
 							type="text"
 							id="name"
 						/>
+						{errors.name && '*name is required'}
 					</div>
 					<div className={styles.formGroup}>
 						<label className={styles.label} htmlFor="email">
@@ -51,6 +56,7 @@ const contact = () => {
 							type="text"
 							id="email"
 						/>
+						{errors.email && '*email is required'}
 					</div>
 					<div className={styles.formGroup}>
 						<label className={styles.label} htmlFor="message">
@@ -61,6 +67,7 @@ const contact = () => {
 							{...register('message', { required: true })}
 							id="message"
 							rows="3"></textarea>
+						{errors.message && '*message is required'}
 					</div>
 					<button className={styles.submitButton} type="submit">
 						Submit
