@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Sun, Moon } from '../components/Icons';
 import styles from '../styles/Navbar.module.css';
 
-const Navbar = ({ darkMode, toggleMode }) => {
+const Navbar = ({ darkMode }) => {
 	return (
 		<>
 			<nav className={styles.nav}>
@@ -23,8 +23,11 @@ const Navbar = ({ darkMode, toggleMode }) => {
 							<Link href="/contact">
 								<a className={styles.links}>contact</a>
 							</Link>
-							<button className={styles.button} onClick={toggleMode}>
-								{darkMode ? <Sun /> : <Moon />}
+							<button className={styles.button} onClick={darkMode.disable}>
+								<Sun />
+							</button>
+							<button className={styles.button} onClick={darkMode.enable}>
+								<Moon />
 							</button>
 						</div>
 					</div>
