@@ -43,6 +43,9 @@
 }
 
 @media (max-width: 768px) {
+	.container {
+		margin-top: 5rem;
+	}
 	.projectTitle {
 		margin-left: 0;
 	}

@@ -21,7 +21,7 @@ export default function Home() {
 			await next({ transform: 'translate3d(0, 15px, 0)' });
 		},
 		from: { transform: 'translate3d(0, 15px, 0)' },
-		config: { duration: 1500 },
+		config: (config.wobbly, { duration: 1100 }),
 		loop: true,
 	});
 
