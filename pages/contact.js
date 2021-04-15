@@ -1,11 +1,21 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 
-import { useSpring, animated, config } from 'react-spring';
 import { useForm } from 'react-hook-form';
+import { useSpring, animated, config } from 'react-spring';
 
 import styles from '../styles/Contact.module.css';
 
 const contact = () => {
+	const router = useRouter();
+
+	const { register, handleSubmit } = useForm();
+
+	const onSubmit = (data) => {
+		router.reload();
+		console.log(data);
+	};
+
 	const titleAnimation = useSpring({
 		from: { transform: 'translate3d(30px, 0, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
@@ -13,9 +23,6 @@ const contact = () => {
 		config: config.slow,
 	});
 
-	const { register, handleSubmit } = useForm();
-
-	const onSubmit = (data) => console.log(data);
 	return (
 		<>
 			<div className={styles.container}>
