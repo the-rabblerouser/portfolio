@@ -2,8 +2,6 @@ import React from 'react';
 
 import { useSpring, animated, config } from 'react-spring';
 
-import Footer from '../components/Footer';
-
 import styles from '../styles/Contact.module.css';
 
 const contact = () => {
@@ -51,14 +49,6 @@ const contact = () => {
 					</button>
 				</form>
 			</div>
-			<style jsx>{`
-				@media (max-width: 768px) {
-				}
-			`}</style>
-			{/* <a href="mailto:tojmccann@gmail.com">
-					<div className={styles.contactName}>tojmccann@gmail.com</div>
-				</a> 
-            */}
 		</>
 	);
 };
