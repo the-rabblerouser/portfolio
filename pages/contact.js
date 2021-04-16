@@ -23,9 +23,7 @@ const contact = () => {
 			data,
 		});
 
-		console.log(data);
-
-		// router.reload();
+		router.reload();
 	};
 
 	const titleAnimation = useSpring({
