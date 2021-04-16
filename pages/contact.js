@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 
 import { useForm } from 'react-hook-form';
 import { useSpring, animated, config } from 'react-spring';
+import axios from 'axios';
 
 import styles from '../styles/Contact.module.css';
 
@@ -16,8 +17,15 @@ const contact = () => {
 	} = useForm();
 
 	const onSubmit = (data) => {
-		router.reload();
+		axios({
+			method: 'post',
+			url: '/api/contact',
+			data,
+		});
+
 		console.log(data);
+
+		// router.reload();
 	};
 
 	const titleAnimation = useSpring({
