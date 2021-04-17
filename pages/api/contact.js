@@ -31,7 +31,7 @@ export default async (req, res) => {
 
 		let mailOptions = {
 			from: `${email}`,
-			to: 'tojmccann@gmail.com',
+			to: process.env.MAIL_USERNAME,
 			subject: `${name} @ ${email}`,
 			text: `${message}`,
 		};

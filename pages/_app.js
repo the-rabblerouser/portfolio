@@ -23,6 +23,11 @@ function MyApp({ Component, pageProps }) {
 			<Head>
 				<title>Joe McCann</title>
 				<link rel="icon" href="/favicon.ico" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+					rel="stylesheet"
+				/>
 			</Head>
 			<Navbar />
 			<Component {...pageProps} />

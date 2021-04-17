@@ -33,7 +33,7 @@
 }
 
 .label {
-	font-family: 'Inconsolata', monospace;
+	font-family: 'Karla', sans-serif;
 }
 
 .input {
@@ -59,6 +59,7 @@
 }
 
 .submitButton {
+	font-family: 'Karla', sans-serif;
 	margin-top: 3rem;
 	margin-right: 21rem;
 	background: none;
