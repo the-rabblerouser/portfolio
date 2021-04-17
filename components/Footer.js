@@ -1,17 +1,23 @@
 import React from 'react';
-import LinkIcons from './LinkIcons';
 
-const Footer = ({ position }) => {
+import { Github, LinkedIn } from './Icons';
+
+const Footer = () => {
 	const year = new Date().getFullYear().toString();
 
 	return (
 		<>
-			<footer>
-				<div className="container">
-					<div className="footer-content">
-						<p>joe mccann {year}</p>
-						<div className="link">
-							<LinkIcons />
+			<footer className="container">
+				<div className="footerContent">
+					<p>joe mccann {year}</p>
+					<div className="link">
+						<div className="icons">
+							<a href="https://github.com/the-rabblerouser">
+								<Github />
+							</a>
+							<a href="https://www.linkedin.com/in/joseph-mccann-77402a88/">
+								<LinkedIn />
+							</a>
 						</div>
 					</div>
 				</div>
@@ -21,7 +27,8 @@ const Footer = ({ position }) => {
 					.container {
 						max-width: 775px;
 					}
-					.footer-content {
+
+					.footerContent {
 						display: flex;
 						justify-content: space-between;
 						align-items: center;
@@ -29,8 +36,24 @@ const Footer = ({ position }) => {
 						font-size: 14px;
 						margin-bottom: 0.2rem;
 					}
+
 					footer p {
 						color: var(--font-color);
+					}
+
+					.icons {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						align-items: center;
+						width: 4.5rem;
+						margin-bottom: 1rem;
+						color: var(--font-color);
+					}
+
+					.icons a:hover {
+						transition: color 0.2s ease;
+						color: var(--accent-color);
 					}
 				`}
 			</style>

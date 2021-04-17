@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 import styles from '../styles/Home.module.css';
 
-export default function Home() {
+const Home = () => {
 	const homeAnimation = useSpring({
 		from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
@@ -130,4 +130,6 @@ export default function Home() {
 			<Footer />
 		</>
 	);
-}
+};
+
+export default Home;
