@@ -10,6 +10,7 @@ My portfolio site is made with **React, Next.js, Node, React-spring, Mongoose, a
 
 
 ## Features
+
 - animations using react-spring.
 - Form created using react-hook-form.
 - Api built using Next.js's serverless api routes.
@@ -17,6 +18,7 @@ My portfolio site is made with **React, Next.js, Node, React-spring, Mongoose, a
 
 
 ## Screenshots
+
 ### Landing Page!
 <img src="https://user-images.githubusercontent.com/75742914/115115561-cbccc600-9f5a-11eb-9331-474ef4ad877c.png" />
 ### About Page!
@@ -28,9 +30,11 @@ My portfolio site is made with **React, Next.js, Node, React-spring, Mongoose, a
 
 
 ## Todo
+
 - Add more projects to project list
 - Create flipable cards to display projects on /projects
 
 
 ## Author
+
 [Joe McCann aka the rabblerouser](https://www.linkedin.com/in/joseph-mccann-77402a88/)
