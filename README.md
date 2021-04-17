@@ -21,10 +21,13 @@ My portfolio site is made with **React, Next.js, Node, React-spring, Mongoose, a
 
 ### Landing Page!
 <img src="https://user-images.githubusercontent.com/75742914/115115561-cbccc600-9f5a-11eb-9331-474ef4ad877c.png" />
+
 ### About Page!
 <img src="https://user-images.githubusercontent.com/75742914/115115654-367e0180-9f5b-11eb-96b9-17d2d80905aa.png" />
+
 ### Projects Page!
 <img src="https://user-images.githubusercontent.com/75742914/115115584-ec951b80-9f5a-11eb-9657-9ba1132232f4.png" />
+
 ### Contact Page!
 <img src="https://user-images.githubusercontent.com/75742914/115115625-12babb80-9f5b-11eb-8a31-fd5b446c89a9.png" />
 
