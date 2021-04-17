@@ -49,7 +49,7 @@ export default function Home() {
 					</span>
 					developer
 				</p>
-				<div style={{ color: 'var(--font-color)' }}>check me out</div>
+				<div className={styles.checkMeOut}>check me out</div>
 				<div className={styles.arrowButton}>
 					<animated.div style={arrowAnimation}>
 						<Link
@@ -72,21 +72,16 @@ export default function Home() {
 				</animated.h1>
 				<div className={styles.aboutDesc}>
 					<div>
-						<img
-							className={styles.img}
-							src="./F6835DBC-1D6F-45E3-A9DA-14B29B32CDB9_1_105_c.jpeg"
-							alt="Joe"
-						/>
+						<img className={styles.img} src="./IMG_0409.jpeg" alt="Joe" />
 					</div>
 					<div>
-						<p style={{ marginBottom: '1.2rem' }}>
+						<p className={styles.aboutP}>
 							Hi! My name is{' '}
 							<span className={styles.contactName}>Joe McCann</span>. I am a
 							junior Full Stack Web Developer who specializes in React, Node and
-							Next.js. I love spending time building projects in javascript and
-							learning about new technologies. I am currently looking for work.
-							Send me a message, I would love to work with you in the near
-							future!
+							Next.js. I love spending time building projects and learning about
+							new technologies. I am currently looking for work. Send me a
+							message, I would love to work with you!
 						</p>
 
 						<div className={styles.skillSection}>
@@ -104,7 +99,7 @@ export default function Home() {
 											<Check /> typescript
 										</li>
 										<li>
-											<Check /> node.js
+											<Check /> node
 										</li>
 									</animated.ul>
 								</div>

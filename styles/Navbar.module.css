@@ -6,6 +6,7 @@
 	top: 0 !important;
 	z-index: 1000;
 	font-weight: 600;
+	font-family: 'Karla', sans-serif;
 }
 .container {
 	max-width: 800px;
@@ -72,4 +73,13 @@
 .material-icons {
 	font-size: 1.3rem;
 	color: var(--font-color);
+}
+
+@media (max-width: 768px) {
+	.sectionNavs {
+		width: 10rem;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-end;
+	}
 }
