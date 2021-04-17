@@ -63,9 +63,9 @@
 
 .aboutTitle {
 	font-family: 'Inconsolata', monospace;
-	align-items: center;
+	align-items: flex-start;
 	margin-bottom: 2rem;
-	margin-left: 3.1rem;
+	margin-right: 3.7rem;
 	text-decoration: underline;
 	text-decoration-color: var(--accent-color);
 }
