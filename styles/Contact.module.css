@@ -90,7 +90,7 @@
 		margin-top: 3rem;
 		margin-right: 14rem;
 		background: none;
-		border: 1px solid #202020;
+		border: 1px solid var(--font-color);
 		border-radius: 4px;
 		height: 3rem;
 		width: 8rem;

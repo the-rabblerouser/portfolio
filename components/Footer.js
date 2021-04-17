@@ -25,7 +25,7 @@ const Footer = () => {
 			<style jsx>
 				{`
 					.container {
-						max-width: 775px;
+						max-width: 785px;
 					}
 
 					.footerContent {
