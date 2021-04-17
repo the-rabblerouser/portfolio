@@ -8,14 +8,15 @@ My portfolio site is made with **React, Next.js, Node, React-spring, Mongoose, a
 
 [Checkout the website](http://joemccann.tech)
 
+
 ## Features
 - animations using react-spring.
 - Form created using react-hook-form.
 - Api built using Next.js's serverless api routes.
 - Fully Responsive on mobile screens.
 
-## Screenshots
 
+## Screenshots
 ### Landing Page!
 <img src="https://user-images.githubusercontent.com/75742914/115115561-cbccc600-9f5a-11eb-9331-474ef4ad877c.png" />
 ### About Page!
