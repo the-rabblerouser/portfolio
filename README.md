@@ -11,6 +11,7 @@ My portfolio site is made with **React, Next.js, Node, React Spring,React Hook F
 
 ## Features
 
+- Dark mode changes based on users os dark mode preference.
 - animations using react-spring.
 - Form created using react-hook-form.
 - Api built using Next.js's serverless api routes.
