@@ -4,7 +4,7 @@
 ![Mongoose](https://img.shields.io/badge/Mongoose-%5E5.12.3-0baf7c)
 ![React Spring](https://img.shields.io/badge/ReactSpring-%5E9.1.0-82adc9)
 
-My portfolio site is made with **React, Next.js, Node, React-spring, Mongoose, and Mongodb**.
+My portfolio site is made with **React, Next.js, Node, React Spring,React Hook Form, Nodemailer, Mongoose, and Mongodb**.
 
 [Checkout the website](http://joemccann.tech)
 
