@@ -6,7 +6,7 @@
 
 My portfolio site is made with **React, Next.js, Node, React Spring,React Hook Form, Nodemailer, Mongoose, and Mongodb**.
 
-[Checkout the website](http://joemccann.tech)
+[Checkout it out!](http://joemccann.tech)
 
 
 ## Features
