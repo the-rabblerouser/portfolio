@@ -28,6 +28,12 @@ function MyApp({ Component, pageProps }) {
 					href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
 					rel="stylesheet"
 				/>
+				<link
+					rel="preload"
+					href="/api/projects"
+					as="fetch"
+					crossorigin="anonymous"
+				/>
 			</Head>
 			<Navbar />
 			<Component {...pageProps} />
