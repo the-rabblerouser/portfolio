@@ -25,14 +25,14 @@ const Footer = () => {
 			<style jsx>
 				{`
 					.container {
-						max-width: 785px;
+						max-width: 800px;
 					}
 
 					.footerContent {
 						display: flex;
 						justify-content: space-between;
 						align-items: center;
-						font-family: 'Inconsolata', monospace;
+						font-family: var(--title-font);
 						font-size: 14px;
 						margin-bottom: 0.2rem;
 					}

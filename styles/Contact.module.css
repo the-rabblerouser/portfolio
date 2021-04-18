@@ -8,9 +8,9 @@
 }
 
 .contactTitle {
-	font-family: 'Inconsolata', monospace;
+	font-family: var(--title-font);
 	margin-bottom: 2rem;
-	margin-left: -9rem;
+	margin-left: -13rem;
 	color: var(--font-color);
 	text-decoration: underline;
 	text-decoration-color: var(--accent-color);
@@ -33,7 +33,7 @@
 }
 
 .label {
-	font-family: 'Karla', sans-serif;
+	font-family: var(--body-font);
 }
 
 .input {
@@ -59,7 +59,7 @@
 }
 
 .submitButton {
-	font-family: 'Karla', sans-serif;
+	font-family: var(--body-font);
 	margin-top: 3rem;
 	margin-right: 21rem;
 	background: none;
@@ -78,7 +78,7 @@
 
 @media (max-width: 768px) {
 	.contactTitle {
-		margin-left: 0;
+		margin-left: -4.5rem;
 	}
 
 	.formGroup {
