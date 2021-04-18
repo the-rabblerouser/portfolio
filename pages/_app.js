@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link
-					href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+					href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald"
 					rel="stylesheet"
 				/>
 				<link
@@ -44,6 +44,8 @@ function MyApp({ Component, pageProps }) {
 					--font-color: ${!darkMode ? '#202020' : '#fff'};
 					--accent-color: #82adc9;
 					--button-color: ${!darkMode ? '#fff' : '#82adc9'};
+					--title-font: font-family: 'Oswald', sans-serif;
+					--body-font:  font-family: 'Cardo', serif;
 				}
 			`}</style>
 		</>

@@ -10,16 +10,16 @@
 /* Home Section */
 
 .home {
-	font-family: 'Karla', sans-serif;
-	font-size: 80px;
-	font-weight: 600;
-	margin: 0;
+	font-family: var(--body-font);
+	font-size: 3rem;
+	font-weight: 400;
+	margin-left: 1rem;
 	color: var(--font-color);
 }
 
 .slidingText {
-	font-size: 33px;
-	font-family: 'Inconsolata', monospace;
+	font-size: 3rem;
+	font-family: var(--title-font);
 	font-weight: 200;
 	color: var(--font-color);
 }
@@ -30,7 +30,7 @@
 }
 
 .checkMeOut {
-	font-family: 'Karla', sans-serif;
+	font-family: var(--body-font);
 }
 
 .arrowButton {
@@ -46,7 +46,7 @@
 
 .img {
 	height: 20rem;
-	width: 16 rem;
+	width: 16rem;
 	border-radius: 5%;
 	margin-right: 2rem;
 	margin-top: 0.4rem;
@@ -62,10 +62,10 @@
 }
 
 .aboutTitle {
-	font-family: 'Inconsolata', monospace;
+	font-family: var(--title-font);
 	align-items: flex-start;
 	margin-bottom: 2rem;
-	margin-right: 3.7rem;
+	margin-right: 2rem;
 	text-decoration: underline;
 	text-decoration-color: var(--accent-color);
 }
@@ -80,30 +80,37 @@
 .aboutP {
 	margin-bottom: 1.2rem;
 	margin-left: 0.9rem;
-	font-family: 'Karla', sans-serif;
+	font-family: var(--body-font);
 }
 
 .skillSection {
 	display: flex;
 	flex-direction: column;
+	margin-left: 1rem;
 }
 
 .skillsTitle {
-	font-family: 'Inconsolata', monospace;
+	font-weight: 300;
+	font-family: var(--title-font);
 	margin-bottom: 1.3rem;
+	text-decoration: underline;
+	text-decoration-color: var(--accent-color);
 }
 
 .skillsSubTitle {
-	font-family: 'Inconsolata', monospace;
+	font-weight: 400;
+	font-family: var(--body-font);
 	margin-bottom: 1rem;
+	text-decoration: underline;
+	text-decoration-color: var(--accent-color);
 }
 
 .skills {
-	font-family: 'Karla', sans-serif;
+	font-family: var(--title-font);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 21rem;
+	width: 18rem;
 }
 
 .skillsList {
@@ -114,12 +121,17 @@
 @media (max-width: 768px) {
 	/* Home Section */
 	.home {
-		font-size: 60px;
+		font-size: 1.6rem;
+		margin-bottom: 0.5rem;
 	}
 
 	.slidingText {
-		font-size: 15px;
+		font-size: 1.7rem;
 		font-weight: 300;
+	}
+
+	.checkMeOut {
+		font-size: 0.7rem;
 	}
 
 	/* About Section */
@@ -147,12 +159,16 @@
 		align-items: center;
 	}
 
+	.skillsTitle {
+		margin-right: 1rem;
+	}
+
 	.skillSection {
 		align-items: center;
 	}
 
 	.skills {
-		width: 20rem;
+		width: 16rem;
 	}
 
 	.skillsList {

@@ -1,9 +1,9 @@
 .container {
-	font-family: 'Karla', sans-serif;
 	max-width: 800px;
 	margin: 7rem auto;
 	padding: 0 1.6rem;
 	color: var(--font-color);
+	font-family: var(--body-font);
 }
 
 .projectHeader {
@@ -29,10 +29,10 @@
 }
 
 .projectTitle {
-	font-family: 'Inconsolata', monospace;
-	margin-bottom: 3rem;
+	font-family: var(--title-font);
 	text-decoration: underline;
 	text-decoration-color: var(--accent-color);
+	margin-bottom: 3rem;
 }
 
 .projectContainer {
