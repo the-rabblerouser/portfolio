@@ -88,22 +88,16 @@ const Home = () => {
 					<div className={styles.aboutStory}>
 						<div>
 							<p className={styles.aboutP}>
-								Hi! My name is{' '}
-								<span className={styles.contactName}>Joe McCann</span>. I am a
-								junior Full Stack Web Developer who specializes in React, Node
-								and Next.js. I love spending time building projects and learning
-								about new technologies. I am currently looking for work. Send me
-								a message, I would love to work with you!
+								I am a 29 year old Full Stack Web Developer who specializes in
+								React, Node and Next.js. I love spending time building projects
+								and learning about new technologies.
+								<br /> <br />
 							</p>
 						</div>
 						<div>
 							<p className={styles.aboutP}>
-								Hi! My name is{' '}
-								<span className={styles.contactName}>Joe McCann</span>. I am a
-								junior Full Stack Web Developer who specializes in React, Node
-								and Next.js. I love spending time building projects and learning
-								about new technologies. I am currently looking for work. Send me
-								a message, I would love to work with you!
+								I am currently looking for work. Send me a message, I would love
+								to work with you!
 							</p>
 						</div>
 					</div>
