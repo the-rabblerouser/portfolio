@@ -2,7 +2,8 @@ import ReactRotatingText from 'react-rotating-text';
 import { useSpring, animated, config } from 'react-spring';
 import { Link } from 'react-scroll';
 
-import { Arrow, Check } from '../components/Icons';
+import { Arrow, Check, Github, LinkedIn } from '../components/Icons';
+
 import Footer from '../components/Footer';
 
 import styles from '../styles/Home.module.css';
@@ -34,11 +35,28 @@ const Home = () => {
 
 	return (
 		<>
-			<animated.div style={homeAnimation} className={styles.container}>
-				<h1 className={styles.home}>Hi, I'm Joe...</h1>
-				<p className={styles.slidingText}>
-					your new{' '}
-					<span>
+			<div className={styles.container}>
+				<div className={styles.homeIcons}>
+					<div className={styles.line}></div>
+					<div>
+						<div className={styles.icons}>
+							<a
+								className={styles.icon}
+								href="https://github.com/the-rabblerouser">
+								<Github />
+							</a>
+							<a
+								className={styles.icon}
+								href="https://www.linkedin.com/in/joseph-mccann-77402a88/">
+								<LinkedIn />
+							</a>
+						</div>
+					</div>
+				</div>
+				<animated.div style={aboutAnimation} className={styles.home}>
+					<div>Hi I'm Joe.</div>
+					<div>and I'm your next</div>
+					<div>
 						<ReactRotatingText
 							typingInterval={140}
 							deletingInterval={140}
@@ -46,86 +64,88 @@ const Home = () => {
 							color="#82ADC9"
 							items={['frontend', 'backend', 'fullstack']}
 						/>
-					</span>
-					developer
-				</p>
-				<div className={styles.checkMeOut}>check me out</div>
-				<div className={styles.arrowButton}>
-					<animated.div style={arrowAnimation}>
-						<Link
-							activeClass="active"
-							to="about"
-							spy={true}
-							smooth={true}
-							duration={1000}>
-							<Arrow />
-						</Link>
-					</animated.div>
-				</div>
-			</animated.div>
-			<div className={styles.aboutMe}>
-				<animated.h1
-					style={aboutAnimation}
-					className={styles.aboutTitle}
-					id="about">
-					about me
-				</animated.h1>
-				<div className={styles.aboutDesc}>
-					<div>
-						<img className={styles.img} src="./IMG_0409.jpeg" alt="Joe" />
 					</div>
-					<div>
-						<p className={styles.aboutP}>
-							Hi! My name is{' '}
-							<span className={styles.contactName}>Joe McCann</span>. I am a
-							junior Full Stack Web Developer who specializes in React, Node and
-							Next.js. I love spending time building projects and learning about
-							new technologies. I am currently looking for work. Send me a
-							message, I would love to work with you!
-						</p>
-
-						<div className={styles.skillSection}>
-							<h4 className={styles.skillsTitle}>look at what i can do</h4>
-							<div className={styles.skills}>
-								<div>
-									<h5 className={styles.skillsSubTitle}>languages</h5>
-									<animated.ul
-										style={homeAnimation}
-										className={styles.skillsList}>
-										<li>
-											<Check /> javascript
-										</li>
-										<li>
-											<Check /> typescript
-										</li>
-										<li>
-											<Check /> node
-										</li>
-									</animated.ul>
-								</div>
-								<div>
-									<h5 className={styles.skillsSubTitle}>dev tools</h5>
-									<animated.ul
-										style={homeAnimation}
-										className={styles.skillsList}>
-										<li>
-											<Check /> react.js
-										</li>
-										<li>
-											<Check /> next.js
-										</li>
-										<li>
-											<Check /> express
-										</li>
-										<li>
-											<Check /> mongodb
-										</li>
-									</animated.ul>
-								</div>
-							</div>
+					<div>developer.</div>
+					<div className={styles.arrowButton}>
+						<animated.div style={arrowAnimation}>
+							<Link
+								activeClass="active"
+								to="about"
+								spy={true}
+								smooth={true}
+								duration={1000}>
+								<Arrow />
+							</Link>
+						</animated.div>
+					</div>
+				</animated.div>
+				<div className={styles.homeImageContainer}>
+					<img src="/IMG_1090.jpeg" alt="Joe" className={styles.homeImage} />
+				</div>
+			</div>
+			<div className={styles.aboutMe} id="about">
+				<animated.div style={aboutAnimation} className={styles.aboutDesc}>
+					<div className={styles.aboutStory}>
+						<div>
+							<p className={styles.aboutP}>
+								I am a 29 year old Full Stack Web Developer who specializes in
+								React, Node and Next.js. I love spending time building projects
+								and learning about new technologies.
+								<br /> <br />
+							</p>
+						</div>
+						<div>
+							<p className={styles.aboutP}>
+								I am currently looking for work. Send me a message, I would love
+								to work with you!
+							</p>
 						</div>
 					</div>
-				</div>
+					<div className={styles.skillSection}>
+						<h1 className={styles.skillsTitle}>Skills</h1>
+						<div className={styles.skills}>
+							<animated.ul style={homeAnimation} className={styles.skillsList}>
+								<div>
+									<li className={styles.item}>
+										<div>
+											<Check />
+										</div>
+										<div>Javascript</div>
+									</li>
+									<li className={styles.item}>
+										<Check /> Typescript
+									</li>
+								</div>
+								<div>
+									<li className={styles.item}>
+										<Check /> Node
+									</li>
+
+									<li className={styles.item}>
+										<Check /> React
+									</li>
+								</div>
+								<div>
+									<li className={styles.item}>
+										<Check /> Next.js
+									</li>
+									<li className={styles.item}>
+										<Check /> Express
+									</li>
+								</div>
+								<div>
+									<li className={styles.item}>
+										<Check /> Git
+									</li>
+									<li className={styles.item}>
+										<Check /> MongoDB
+									</li>
+								</div>
+							</animated.ul>
+							{/* </div> */}
+						</div>
+					</div>
+				</animated.div>
 			</div>
 			<Footer />
 		</>

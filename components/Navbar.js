@@ -10,12 +10,11 @@ const Navbar = () => {
 				<div className={styles.container}>
 					<div className={styles.navbarAlignment}>
 						<Link href="/">
-							<a className={styles.title}>joemccann.tech</a>
+							<a className={styles.title}>
+								<div className={styles.logo}>J</div>
+							</a>
 						</Link>
 						<div className={styles.sectionNavs}>
-							<Link href="/#about">
-								<a className={styles.links}>about</a>
-							</Link>
 							<Link href="/projects">
 								<a className={styles.links}>projects</a>
 							</Link>

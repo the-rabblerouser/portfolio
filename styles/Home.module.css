@@ -1,27 +1,50 @@
 .container {
+	max-width: 65rem;
 	min-height: 100vh;
-	padding: 0 0.5rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	padding: 20px;
+	margin: 25px auto;
 }
 
 /* Home Section */
 
-.home {
-	font-family: var(--body-font);
-	font-size: 3rem;
-	font-weight: 400;
-	margin-left: 1rem;
-	color: var(--font-color);
+.homeIcons {
+	display: flex;
+	align-items: center;
+	margin-top: 10rem;
 }
 
-.slidingText {
-	font-size: 3rem;
+.line {
+	align-self: center;
+	height: 2px;
+	background-color: var(--font-color);
+	width: 20rem;
+	margin-top: 0.2rem;
+	margin-left: 1.5rem;
+}
+
+.icons {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 3rem;
+	color: var(--title-color);
+}
+
+.icon:hover {
+	transition: color 0.2s ease;
+	color: var(--accent-color);
+}
+
+.home {
 	font-family: var(--title-font);
-	font-weight: 200;
-	color: var(--font-color);
+	font-size: 3vw;
+	font-weight: 300;
+	color: var(--title-color);
+	line-height: 129.69%;
+	letter-spacing: 0.03em;
+	margin: 1.5rem;
+	width: 100%;
 }
 
 .react-rotating-text-cursor {
@@ -29,122 +52,135 @@
 		infinite;
 }
 
-.checkMeOut {
-	font-family: var(--body-font);
-}
-
 .arrowButton {
-	padding-top: 1rem;
 	cursor: pointer;
+	margin-bottom: 1rem;
 }
 
-.checkMeOut {
-	color: var(--font-color);
+.homeImage {
+	width: 55vw;
+	height: 25rem;
+	border-radius: 4px;
 }
 
 /* About Section */
 
-.img {
-	height: 20rem;
-	width: 16rem;
-	border-radius: 5%;
-	margin-right: 2rem;
-	margin-top: 0.4rem;
-}
-
 .aboutMe {
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	min-height: 100vh;
+	width: 100%;
 	color: var(--font-color);
 }
 
-.aboutTitle {
-	font-family: var(--title-font);
-	align-items: flex-start;
-	margin-bottom: 2rem;
-	margin-right: 2rem;
-	text-decoration: underline;
-	text-decoration-color: var(--accent-color);
+.aboutDesc {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 66rem;
 }
 
-.aboutDesc {
-	max-width: 800px;
+.aboutStory {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	margin-bottom: 1rem;
 }
 
 .aboutP {
-	margin-bottom: 1.2rem;
-	margin-left: 0.9rem;
+	width: 30rem;
+	margin-top: -6.5rem;
+	margin-bottom: 6rem;
+	margin-left: 1rem;
 	font-family: var(--body-font);
 }
 
 .skillSection {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin-left: 1rem;
+	justify-content: flex-start;
+	align-items: space-between;
 }
 
 .skillsTitle {
+	color: var(--title-color);
 	font-weight: 300;
 	font-family: var(--title-font);
-	margin-bottom: 1.3rem;
-	text-decoration: underline;
-	text-decoration-color: var(--accent-color);
-}
-
-.skillsSubTitle {
-	font-weight: 400;
-	font-family: var(--body-font);
-	margin-bottom: 1rem;
-	text-decoration: underline;
+	margin-bottom: 2rem;
+	margin-left: 1rem;
+	text-decoration: 2px underline;
 	text-decoration-color: var(--accent-color);
 }
 
 .skills {
+	color: var(--title-color);
 	font-family: var(--title-font);
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	width: 18rem;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-left: -2rem;
 }
 
 .skillsList {
+	width: 100%;
+	text-align: left;
+	text-decoration: none;
 	list-style: none;
-	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1r 1fr;
+}
+
+.item {
+	width: 8rem;
+	font-family: var(--body-font);
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 2.6rem;
 }
 
 @media (max-width: 768px) {
 	/* Home Section */
 	.home {
-		font-size: 1.6rem;
-		margin-bottom: 0.5rem;
+		font-size: 10vw;
+	}
+
+	.homeIcons {
+		margin-top: 7rem;
+	}
+
+	.line {
+		width: 14rem;
+	}
+
+	.icons {
+		margin-left: 2rem;
+	}
+
+	.icon:hover {
+		transition: color 0.2s ease;
+		color: var(--accent-color);
 	}
 
 	.slidingText {
-		font-size: 1.7rem;
+		font-size: 2.5rem;
 		font-weight: 300;
 	}
 
-	.checkMeOut {
-		font-size: 0.7rem;
+	.homeImage {
+		width: 100%;
+		height: 40vh;
+		border-radius: 4px;
+		object-fit: cover;
 	}
 
 	/* About Section */
-
-	.img {
-		height: 11rem;
-		width: 11rem;
-		margin: 0 0 1rem 0;
-	}
-
-	.aboutMe {
-		max-width: 800px;
-	}
 
 	.aboutTitle {
 		font-weight: 200;
@@ -159,24 +195,49 @@
 		align-items: center;
 	}
 
-	.skillsTitle {
-		margin-right: 1rem;
+	.aboutStory {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-top: 14rem;
+		margin-bottom: -8rem;
 	}
 
-	.skillSection {
-		align-items: center;
+	.aboutP {
+		margin-left: 1rem;
+	}
+
+	.skillsTitle {
+		align-self: center;
+		margin-left: 0;
+		margin-top: 2rem;
 	}
 
 	.skills {
-		width: 16rem;
+		margin-left: 0;
+	}
+
+	.skillSection {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 4rem;
 	}
 
 	.skillsList {
-		list-style: none;
-		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 1fr 1fr;
+		margin-left: 1rem;
 	}
 
-	.contactName {
-		margin-bottom: -1.2rem;
+	.item {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 2rem;
+		padding: 0.3rem;
+		margin-right: 3rem;
 	}
 }

@@ -9,7 +9,7 @@ const Footer = () => {
 		<>
 			<footer className="container">
 				<div className="footerContent">
-					<p>joe mccann {year}</p>
+					<p>joemccann.tech {year}</p>
 					<div className="link">
 						<div className="icons">
 							<a href="https://github.com/the-rabblerouser">
@@ -25,7 +25,7 @@ const Footer = () => {
 			<style jsx>
 				{`
 					.container {
-						max-width: 800px;
+						max-width: 65rem;
 					}
 
 					.footerContent {
@@ -38,7 +38,7 @@ const Footer = () => {
 					}
 
 					footer p {
-						color: var(--font-color);
+						color: var(--title-color);
 					}
 
 					.icons {
@@ -48,7 +48,7 @@ const Footer = () => {
 						align-items: center;
 						width: 4.5rem;
 						margin-bottom: 1rem;
-						color: var(--font-color);
+						color: var(--title-color);
 					}
 
 					.icons a:hover {

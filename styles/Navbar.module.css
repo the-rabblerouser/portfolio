@@ -1,15 +1,17 @@
 .nav {
 	background-color: var(--bg-color);
-	box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+	font-weight: 600;
+	z-index: 1000;
+	/* box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2); */
 	position: fixed;
 	width: 100%;
 	top: 0 !important;
-	z-index: 1000;
-	font-weight: 600;
+	padding: 1rem;
 }
+
 .container {
-	max-width: 800px;
-	margin: 0 auto;
+	max-width: 65rem;
+	margin: 1rem auto;
 	padding: 0 1.4em;
 }
 .navbarAlignment {
@@ -22,21 +24,30 @@
 	font-weight: 300;
 }
 .sectionNavs {
-	width: 12rem;
+	width: 10rem;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 }
 
+.logo {
+	font-family: 'Inconsolata', monospace;
+	color: #fff;
+	background-color: var(--accent-color);
+	padding: 0.1rem 0.6rem 0.1rem 0.6rem;
+	margin-right: 0.8rem;
+	border-radius: 10%;
+}
+
 .title {
 	font-family: var(--title-font);
-	color: var(--font-color);
+	color: var(--title-color);
 	font-size: 20px;
 	font-weight: 300;
 }
 
 .title:hover {
-	color: var(--font-color);
+	color: var(--title-color);
 	font-size: 20px;
 	font-weight: 300;
 	text-decoration: underline;
@@ -46,14 +57,14 @@
 .links {
 	font-family: var(--body-font);
 	background-color: transparent;
-	color: var(--font-color);
+	color: var(--title-color);
 	font-size: 14.4px;
 	margin-left: 10px;
 }
 
 .links:hover {
 	background-color: transparent;
-	color: var(--font-color);
+	color: var(--title-color);
 	font-size: 14.4px;
 	margin-left: 10px;
 	text-decoration: underline;
@@ -74,7 +85,7 @@
 
 @media (max-width: 768px) {
 	.sectionNavs {
-		width: 10rem;
+		width: 6rem;
 		display: flex;
 		justify-content: space-evenly;
 		align-items: flex-end;

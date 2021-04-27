@@ -1,17 +1,42 @@
 .container {
-	max-width: 800px;
+	max-width: 65rem;
 	margin: 7rem auto;
 	padding: 0 1.6rem;
 	color: var(--font-color);
 	font-family: var(--body-font);
 }
 
+.imageSpacing {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.image {
+	height: 100%;
+	width: 100%;
+	border: 1px solid rgb(105, 105, 105);
+	border-radius: 10px;
+	transition-duration: 0.3s;
+}
+
+.image:hover {
+	transform: scale(1.03);
+}
+
 .projectHeader {
+	margin-top: 1rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 100%;
+}
+
+.projectP {
+	width: 50rem;
+	margin-top: -1rem;
+	margin-bottom: 3rem;
 }
 
 .code {
@@ -21,18 +46,21 @@
 
 .links {
 	text-decoration: none;
+	color: var(--title-color);
 }
 
 .links:hover {
-	color: var(--font-color);
+	color: var(--title-color);
 	text-decoration-color: var(--accent-color);
 }
 
 .projectTitle {
+	color: var(--title-color);
 	font-family: var(--title-font);
-	text-decoration: underline;
-	text-decoration-color: var(--accent-color);
+	font-weight: 300;
 	margin-bottom: 3rem;
+	text-decoration: 2px underline;
+	text-decoration-color: var(--accent-color);
 }
 
 .projectContainer {
@@ -46,9 +74,13 @@
 
 @media (max-width: 768px) {
 	.container {
-		margin-top: 5rem;
+		margin-top: 8rem;
 	}
-	.projectTitle {
-		margin-left: 0;
+
+	.projectP {
+		font-size: 0.8rem;
+		width: 22rem;
+		margin-top: -1rem;
+		margin-bottom: 3rem;
 	}
 }
