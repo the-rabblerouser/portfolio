@@ -17,7 +17,7 @@ const projects = () => {
 		<>
 			<div className={styles.container}>
 				<animated.h1 className={styles.projectTitle} style={titleAnimation}>
-					projects
+					Projects
 				</animated.h1>
 				<ProjectsList />
 			</div>

@@ -10,8 +10,7 @@
 .contactTitle {
 	font-family: var(--title-font);
 	margin-bottom: 2rem;
-	margin-left: -13rem;
-	color: var(--font-color);
+	color: var(--title-color);
 	text-decoration: underline;
 	text-decoration-color: var(--accent-color);
 }
@@ -23,8 +22,8 @@
 	height: 100%;
 	justify-content: center;
 	align-items: center;
-	color: var(--font-color);
-	caret-color: var(--font-color);
+	color: var(--title-color);
+	caret-color: var(--title-color);
 }
 
 .formGroup {
@@ -40,7 +39,7 @@
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
-	border: 1px solid var(--font-color);
+	border: 1px solid var(--title-color);
 	outline: none;
 	border-radius: 4px;
 	color: var(--font-color);
@@ -63,8 +62,8 @@
 	margin-top: 3rem;
 	margin-right: 21rem;
 	background: none;
-	border: 1px solid var(--font-color);
-	color: var(--font-color);
+	border: 1px solid var(--title-color);
+	color: var(--title-color);
 	border-radius: 4px;
 	height: 3rem;
 	width: 9rem;
@@ -78,7 +77,9 @@
 
 @media (max-width: 768px) {
 	.contactTitle {
-		margin-left: -4.5rem;
+		line-height: 2.5rem;
+		margin-bottom: 1rem;
+		width: 85vw;
 	}
 
 	.formGroup {

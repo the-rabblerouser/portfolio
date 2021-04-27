@@ -1,12 +1,12 @@
 export const Check = () => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		width="24"
-		height="24"
+		width="20"
+		height="20"
 		fill="var(--accent-color)"
-		className="bi bi-check"
+		className="bi bi-code-slash"
 		viewBox="0 0 16 16">
-		<path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+		<path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
 	</svg>
 );
 
@@ -39,7 +39,7 @@ export const Arrow = () => (
 		xmlns="http://www.w3.org/2000/svg"
 		width="28"
 		height="28"
-		fill="var(--font-color)"
+		fill="var(--title-color)"
 		className="bi bi-arrow-down"
 		viewBox="0 0 16 16">
 		<path

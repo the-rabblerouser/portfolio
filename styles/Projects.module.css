@@ -21,17 +21,17 @@
 
 .links {
 	text-decoration: none;
+	color: var(--title-color);
 }
 
 .links:hover {
-	color: var(--font-color);
+	color: var(--title-color);
 	text-decoration-color: var(--accent-color);
 }
 
 .projectTitle {
+	color: var(--title-color);
 	font-family: var(--title-font);
-	text-decoration: underline;
-	text-decoration-color: var(--accent-color);
 	margin-bottom: 3rem;
 }
 
@@ -46,7 +46,7 @@
 
 @media (max-width: 768px) {
 	.container {
-		margin-top: 5rem;
+		margin-top: 8rem;
 	}
 	.projectTitle {
 		margin-left: 0;

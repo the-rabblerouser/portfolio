@@ -41,13 +41,13 @@
 
 .title {
 	font-family: var(--title-font);
-	color: var(--font-color);
+	color: var(--title-color);
 	font-size: 20px;
 	font-weight: 300;
 }
 
 .title:hover {
-	color: var(--font-color);
+	color: var(--title-color);
 	font-size: 20px;
 	font-weight: 300;
 	text-decoration: underline;
@@ -57,14 +57,14 @@
 .links {
 	font-family: var(--body-font);
 	background-color: transparent;
-	color: var(--font-color);
+	color: var(--title-color);
 	font-size: 14.4px;
 	margin-left: 10px;
 }
 
 .links:hover {
 	background-color: transparent;
-	color: var(--font-color);
+	color: var(--title-color);
 	font-size: 14.4px;
 	margin-left: 10px;
 	text-decoration: underline;

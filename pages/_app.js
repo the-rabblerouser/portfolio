@@ -41,7 +41,8 @@ function MyApp({ Component, pageProps }) {
 			<style jsx global>{`
 				:root {
 					--bg-color: ${!darkMode ? '#fff' : '#202020'};
-					--font-color: ${!darkMode ? '#202020' : '#fff'};
+					--title-color: ${!darkMode ? '#202020' : '#fff'};
+					--font-color: ${!darkMode ? 'rgb(105, 105, 105)' : '#fff'};
 					--accent-color: #82adc9;
 					--button-color: ${!darkMode ? '#fff' : '#82adc9'};
 					--title-font: font-family: 'Oswald', sans-serif;

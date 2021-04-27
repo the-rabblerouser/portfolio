@@ -53,8 +53,9 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-				<animated.div style={homeAnimation} className={styles.home}>
-					<div>Hi I'm Joe,</div>
+				<animated.div style={aboutAnimation} className={styles.home}>
+					<div>Hi I'm Joe.</div>
+					<div>and I'm your next</div>
 					<div>
 						<ReactRotatingText
 							typingInterval={140}
@@ -64,7 +65,7 @@ const Home = () => {
 							items={['frontend', 'backend', 'fullstack']}
 						/>
 					</div>
-					<div>developer</div>
+					<div>developer.</div>
 					<div className={styles.arrowButton}>
 						<animated.div style={arrowAnimation}>
 							<Link
@@ -82,11 +83,8 @@ const Home = () => {
 					<img src="/IMG_1090.jpeg" alt="Joe" className={styles.homeImage} />
 				</div>
 			</div>
-			<div className={styles.aboutMe}>
-				<animated.div
-					style={aboutAnimation}
-					id="about"
-					className={styles.aboutDesc}>
+			<div className={styles.aboutMe} id="about">
+				<animated.div style={aboutAnimation} className={styles.aboutDesc}>
 					<div className={styles.aboutStory}>
 						<div>
 							<p className={styles.aboutP}>
@@ -110,43 +108,44 @@ const Home = () => {
 						</div>
 					</div>
 					<div className={styles.skillSection}>
-						<h4 className={styles.skillsTitle}>look at what i can do</h4>
+						<h1 className={styles.skillsTitle}>Skills</h1>
 						<div className={styles.skills}>
-							<div>
-								<h5 className={styles.skillsSubTitle}>languages</h5>
-								<animated.ul
-									style={homeAnimation}
-									className={styles.skillsList}>
-									<li>
-										<Check /> javascript
+							<animated.ul style={homeAnimation} className={styles.skillsList}>
+								<div>
+									<li className={styles.item}>
+										<Check /> Javascript
 									</li>
-									<li>
-										<Check /> typescript
+									<li className={styles.item}>
+										<Check /> Typescript
 									</li>
-									<li>
-										<Check /> node
+								</div>
+								<div>
+									<li className={styles.item}>
+										<Check /> Node
 									</li>
-								</animated.ul>
-							</div>
-							<div>
-								<h5 className={styles.skillsSubTitle}>dev tools</h5>
-								<animated.ul
-									style={homeAnimation}
-									className={styles.skillsList}>
-									<li>
-										<Check /> react.js
+
+									<li className={styles.item}>
+										<Check /> React
 									</li>
-									<li>
-										<Check /> next.js
+								</div>
+								<div>
+									<li className={styles.item}>
+										<Check /> Next.js
 									</li>
-									<li>
-										<Check /> express
+									<li className={styles.item}>
+										<Check /> Express
 									</li>
-									<li>
-										<Check /> mongodb
+								</div>
+								<div>
+									<li className={styles.item}>
+										<Check /> Git
 									</li>
-								</animated.ul>
-							</div>
+									<li className={styles.item}>
+										<Check /> MongoDB
+									</li>
+								</div>
+							</animated.ul>
+							{/* </div> */}
 						</div>
 					</div>
 				</animated.div>

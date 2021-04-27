@@ -38,7 +38,7 @@ const Footer = () => {
 					}
 
 					footer p {
-						color: var(--font-color);
+						color: var(--title-color);
 					}
 
 					.icons {
@@ -48,7 +48,7 @@ const Footer = () => {
 						align-items: center;
 						width: 4.5rem;
 						margin-bottom: 1rem;
-						color: var(--font-color);
+						color: var(--title-color);
 					}
 
 					.icons a:hover {
