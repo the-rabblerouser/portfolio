@@ -83,68 +83,73 @@ const Home = () => {
 				</div>
 			</div>
 			<div className={styles.aboutMe}>
-				<animated.h1
+				<animated.div
 					style={aboutAnimation}
-					className={styles.aboutTitle}
-					id="about">
-					about me
-				</animated.h1>
-				<div className={styles.aboutDesc}>
-					<div>
-						<img className={styles.img} src="./IMG_0409.jpeg" alt="Joe" />
+					id="about"
+					className={styles.aboutDesc}>
+					<div className={styles.aboutStory}>
+						<div>
+							<p className={styles.aboutP}>
+								Hi! My name is{' '}
+								<span className={styles.contactName}>Joe McCann</span>. I am a
+								junior Full Stack Web Developer who specializes in React, Node
+								and Next.js. I love spending time building projects and learning
+								about new technologies. I am currently looking for work. Send me
+								a message, I would love to work with you!
+							</p>
+						</div>
+						<div>
+							<p className={styles.aboutP}>
+								Hi! My name is{' '}
+								<span className={styles.contactName}>Joe McCann</span>. I am a
+								junior Full Stack Web Developer who specializes in React, Node
+								and Next.js. I love spending time building projects and learning
+								about new technologies. I am currently looking for work. Send me
+								a message, I would love to work with you!
+							</p>
+						</div>
 					</div>
-					<div>
-						<p className={styles.aboutP}>
-							Hi! My name is{' '}
-							<span className={styles.contactName}>Joe McCann</span>. I am a
-							junior Full Stack Web Developer who specializes in React, Node and
-							Next.js. I love spending time building projects and learning about
-							new technologies. I am currently looking for work. Send me a
-							message, I would love to work with you!
-						</p>
-
-						<div className={styles.skillSection}>
-							<h4 className={styles.skillsTitle}>look at what i can do</h4>
-							<div className={styles.skills}>
-								<div>
-									<h5 className={styles.skillsSubTitle}>languages</h5>
-									<animated.ul
-										style={homeAnimation}
-										className={styles.skillsList}>
-										<li>
-											<Check /> javascript
-										</li>
-										<li>
-											<Check /> typescript
-										</li>
-										<li>
-											<Check /> node
-										</li>
-									</animated.ul>
-								</div>
-								<div>
-									<h5 className={styles.skillsSubTitle}>dev tools</h5>
-									<animated.ul
-										style={homeAnimation}
-										className={styles.skillsList}>
-										<li>
-											<Check /> react.js
-										</li>
-										<li>
-											<Check /> next.js
-										</li>
-										<li>
-											<Check /> express
-										</li>
-										<li>
-											<Check /> mongodb
-										</li>
-									</animated.ul>
-								</div>
+					<div className={styles.skillSection}>
+						<h4 className={styles.skillsTitle}>look at what i can do</h4>
+						<div className={styles.skills}>
+							<div>
+								<h5 className={styles.skillsSubTitle}>languages</h5>
+								<animated.ul
+									style={homeAnimation}
+									className={styles.skillsList}>
+									<li>
+										<Check /> javascript
+									</li>
+									<li>
+										<Check /> typescript
+									</li>
+									<li>
+										<Check /> node
+									</li>
+								</animated.ul>
+							</div>
+							<div>
+								<h5 className={styles.skillsSubTitle}>dev tools</h5>
+								<animated.ul
+									style={homeAnimation}
+									className={styles.skillsList}>
+									<li>
+										<Check /> react.js
+									</li>
+									<li>
+										<Check /> next.js
+									</li>
+									<li>
+										<Check /> express
+									</li>
+									<li>
+										<Check /> mongodb
+									</li>
+								</animated.ul>
 							</div>
 						</div>
 					</div>
-				</div>
+				</animated.div>
 			</div>
 			<Footer />
 		</>
