@@ -113,7 +113,10 @@ const Home = () => {
 							<animated.ul style={homeAnimation} className={styles.skillsList}>
 								<div>
 									<li className={styles.item}>
-										<Check /> Javascript
+										<div>
+											<Check />
+										</div>
+										<div>Javascript</div>
 									</li>
 									<li className={styles.item}>
 										<Check /> Typescript
