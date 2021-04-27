@@ -204,13 +204,13 @@
 	}
 
 	.aboutP {
-		margin-left: 1rem;
+		width: 21rem;
 	}
 
 	.skillsTitle {
 		align-self: center;
-		margin-left: 0;
-		margin-top: 2rem;
+		margin-left: -1.2rem;
+		margin-top: 6rem;
 	}
 
 	.skills {
