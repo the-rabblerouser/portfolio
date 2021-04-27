@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<title>Joe McCann</title>
+				<title>joemccann.tech</title>
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link

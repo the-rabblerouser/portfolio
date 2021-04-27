@@ -11,7 +11,7 @@ const Navbar = () => {
 					<div className={styles.navbarAlignment}>
 						<Link href="/">
 							<a className={styles.title}>
-								<span className={styles.logo}>J</span>
+								<div className={styles.logo}>J</div>
 							</a>
 						</Link>
 						<div className={styles.sectionNavs}>
