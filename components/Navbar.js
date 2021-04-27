@@ -10,7 +10,9 @@ const Navbar = () => {
 				<div className={styles.container}>
 					<div className={styles.navbarAlignment}>
 						<Link href="/">
-							<a className={styles.title}>joemccann.tech</a>
+							<a className={styles.title}>
+								<span className={styles.logo}>J</span>
+							</a>
 						</Link>
 						<div className={styles.sectionNavs}>
 							<Link href="/#about">
