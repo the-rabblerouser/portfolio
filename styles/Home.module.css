@@ -16,7 +16,7 @@
 .line {
 	align-self: center;
 	height: 2px;
-	background-color: gray;
+	background-color: var(--font-color);
 	width: 20rem;
 	margin-top: 0.2rem;
 	margin-left: 1.5rem;
@@ -110,6 +110,8 @@
 	font-family: var(--title-font);
 	margin-bottom: 2rem;
 	margin-left: 1rem;
+	text-decoration: 2px underline;
+	text-decoration-color: var(--accent-color);
 }
 
 .skills {

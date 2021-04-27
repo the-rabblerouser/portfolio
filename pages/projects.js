@@ -19,6 +19,10 @@ const projects = () => {
 				<animated.h1 className={styles.projectTitle} style={titleAnimation}>
 					Projects
 				</animated.h1>
+				<div className={styles.projectP}>
+					I like to stay busy and always have a project in the works. Take a
+					look at some of the projects I've spent my time building.
+				</div>
 				<ProjectsList />
 			</div>
 			<Footer />
