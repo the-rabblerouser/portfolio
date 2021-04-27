@@ -79,7 +79,7 @@ const Home = () => {
 					</div>
 				</animated.div>
 				<div className={styles.homeImageContainer}>
-					<img src="/IMG_0409.jpeg" alt="Joe" className={styles.homeImage} />
+					<img src="/IMG_1090.jpeg" alt="Joe" className={styles.homeImage} />
 				</div>
 			</div>
 			<div className={styles.aboutMe}>
