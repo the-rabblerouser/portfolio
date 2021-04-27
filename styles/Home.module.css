@@ -97,7 +97,7 @@
 .skillSection {
 	display: flex;
 	flex-direction: column;
-	align-content: space-evenly;
+	align-items: space-evenly;
 	margin-left: 1rem;
 }
 
