@@ -2,7 +2,8 @@ import ReactRotatingText from 'react-rotating-text';
 import { useSpring, animated, config } from 'react-spring';
 import { Link } from 'react-scroll';
 
-import { Arrow, Check } from '../components/Icons';
+import { Arrow, Check, Github, LinkedIn } from '../components/Icons';
+
 import Footer from '../components/Footer';
 
 import styles from '../styles/Home.module.css';
@@ -34,11 +35,27 @@ const Home = () => {
 
 	return (
 		<>
-			<animated.div style={homeAnimation} className={styles.container}>
-				<h1 className={styles.home}>Hi, I'm Joe...</h1>
-				<p className={styles.slidingText}>
-					your new{' '}
-					<span>
+			<div className={styles.container}>
+				<div className={styles.homeIcons}>
+					<div className={styles.line}></div>
+					<div>
+						<div className={styles.icons}>
+							<a
+								className={styles.icon}
+								href="https://github.com/the-rabblerouser">
+								<Github />
+							</a>
+							<a
+								className={styles.icon}
+								href="https://www.linkedin.com/in/joseph-mccann-77402a88/">
+								<LinkedIn />
+							</a>
+						</div>
+					</div>
+				</div>
+				<animated.div style={homeAnimation} className={styles.home}>
+					<div>Hi I'm Joe,</div>
+					<div>
 						<ReactRotatingText
 							typingInterval={140}
 							deletingInterval={140}
@@ -46,23 +63,25 @@ const Home = () => {
 							color="#82ADC9"
 							items={['frontend', 'backend', 'fullstack']}
 						/>
-					</span>
-					developer
-				</p>
-				<div className={styles.checkMeOut}>check me out</div>
-				<div className={styles.arrowButton}>
-					<animated.div style={arrowAnimation}>
-						<Link
-							activeClass="active"
-							to="about"
-							spy={true}
-							smooth={true}
-							duration={1000}>
-							<Arrow />
-						</Link>
-					</animated.div>
+					</div>
+					<div>developer</div>
+					<div className={styles.arrowButton}>
+						<animated.div style={arrowAnimation}>
+							<Link
+								activeClass="active"
+								to="about"
+								spy={true}
+								smooth={true}
+								duration={1000}>
+								<Arrow />
+							</Link>
+						</animated.div>
+					</div>
+				</animated.div>
+				<div className={styles.homeImageContainer}>
+					<img src="/IMG_0409.jpeg" alt="Joe" className={styles.homeImage} />
 				</div>
-			</animated.div>
+			</div>
 			<div className={styles.aboutMe}>
 				<animated.h1
 					style={aboutAnimation}
