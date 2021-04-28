@@ -156,7 +156,8 @@
 	}
 
 	.line {
-		width: 14rem;
+		width: 15.8rem;
+		margin-left: 0rem;
 	}
 
 	.icons {
@@ -174,8 +175,9 @@
 	}
 
 	.homeImage {
-		width: 100%;
+		width: 110%;
 		height: 40vh;
+		margin-left: -0.25rem;
 		border-radius: 4px;
 		object-fit: cover;
 	}
