@@ -1,5 +1,6 @@
 .container {
 	min-height: 100vh;
+	max-width: 65rem;
 	padding: 0 0.5rem;
 	display: flex;
 	flex-direction: column;
@@ -80,6 +81,7 @@
 	.contactTitle {
 		line-height: 2.5rem;
 		margin-top: 2rem;
+		margin-left: -2rem;
 		width: 85vw;
 	}
 
@@ -89,6 +91,7 @@
 	}
 
 	.submitButton {
+		margin-top: 0.5rem;
 		margin-right: 14rem;
 		background: none;
 		border: 1px solid var(--font-color);

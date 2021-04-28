@@ -37,7 +37,7 @@ const contact = () => {
 		<>
 			<div className={styles.container}>
 				<animated.h5 style={titleAnimation} className={styles.contactTitle}>
-					Feel free to reach out if you're looking for a developer
+					Feel free to reach out if you're looking to connect
 				</animated.h5>
 				<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
 					<div className={styles.formGroup}>
