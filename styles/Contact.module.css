@@ -1,7 +1,7 @@
 .form {
 	color: var(--title-color);
 	caret-color: var(--title-color);
-	margin-top: 7rem;
+	margin-top: 4rem;
 }
 
 .contactTitle {
@@ -61,24 +61,24 @@
 }
 
 @media (min-width: 768px) {
+	.form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		color: var(--title-color);
+		caret-color: var(--title-color);
+	}
+
 	.contactTitle {
 		font-weight: 300;
 		font-family: var(--title-font);
 		color: var(--title-color);
 		text-decoration: underline;
 		text-decoration-color: var(--accent-color);
-		margin: 3rem 4rem 3rem 0rem;
-	}
-
-	.form {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		height: 100%;
-		justify-content: center;
-		align-items: center;
-		color: var(--title-color);
-		caret-color: var(--title-color);
+		margin: 0rem 4rem 3rem 0rem;
 	}
 
 	.formGroup {
