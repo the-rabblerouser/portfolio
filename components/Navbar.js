@@ -7,21 +7,19 @@ const Navbar = () => {
 	return (
 		<>
 			<nav className={styles.nav}>
-				<div className={styles.container}>
-					<div className={styles.navbarAlignment}>
-						<Link href="/">
-							<a className={styles.title}>
-								<div className={styles.logo}>J</div>
-							</a>
+				<div className={styles.navbarAlignment}>
+					<Link href="/">
+						<a className={styles.title}>
+							<div className={styles.logo}>J</div>
+						</a>
+					</Link>
+					<div>
+						<Link href="/projects">
+							<a className={styles.links}>projects</a>
 						</Link>
-						<div className={styles.sectionNavs}>
-							<Link href="/projects">
-								<a className={styles.links}>projects</a>
-							</Link>
-							<Link href="/contact">
-								<a className={styles.links}>contact</a>
-							</Link>
-						</div>
+						<Link href="/contact">
+							<a className={styles.links}>contact</a>
+						</Link>
 					</div>
 				</div>
 			</nav>
