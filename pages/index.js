@@ -10,7 +10,7 @@ import styles from '../styles/Home.module.css';
 
 const Home = () => {
 	const homeAnimation = useSpring({
-		from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
+		from: { transform: 'translate3d(0, 2px, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
 		delay: 150,
 		config: config.slow,
@@ -27,7 +27,7 @@ const Home = () => {
 	});
 
 	const aboutAnimation = useSpring({
-		from: { transform: 'translate3d(30px, 0, 0)', opacity: 0 },
+		from: { transform: 'translate3d(5px, 0, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
 		delay: 150,
 		config: config.slow,

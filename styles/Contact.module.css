@@ -1,11 +1,7 @@
 .form {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	color: var(--title-color);
 	caret-color: var(--title-color);
+	margin-top: 7rem;
 }
 
 .contactTitle {
@@ -71,7 +67,7 @@
 		color: var(--title-color);
 		text-decoration: underline;
 		text-decoration-color: var(--accent-color);
-		margin: 9rem 4rem 3rem 0rem;
+		margin: 3rem 4rem 3rem 0rem;
 	}
 
 	.form {

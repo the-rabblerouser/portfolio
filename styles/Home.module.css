@@ -1,5 +1,11 @@
 /* Home Section */
 
+.homeIcons {
+	display: flex;
+	align-items: center;
+	margin-top: 7rem;
+}
+
 .home {
 	font-family: var(--title-font);
 	font-size: 1.5rem;
@@ -8,12 +14,6 @@
 	line-height: 129.69%;
 	letter-spacing: 0.1rem;
 	margin: 1.5rem;
-}
-
-.homeIcons {
-	display: flex;
-	align-items: center;
-	margin-top: 7rem;
 }
 
 .line {

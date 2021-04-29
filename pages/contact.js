@@ -27,7 +27,7 @@ const contact = () => {
 	};
 
 	const titleAnimation = useSpring({
-		from: { transform: 'translate3d(30px, 0, 0)', opacity: 0 },
+		from: { transform: 'translate3d(5px, 0, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
 		delay: 150,
 		config: config.slow,
@@ -35,49 +35,51 @@ const contact = () => {
 
 	return (
 		<>
-			<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-				<animated.h5 style={titleAnimation} className={styles.contactTitle}>
-					Feel free to reach out if you're looking to connect
-				</animated.h5>
-				<div className={styles.formGroup}>
-					<label className={styles.label} htmlFor="name">
-						Name
-					</label>
-					<input
-						className={styles.input}
-						{...register('name', { required: true })}
-						type="text"
-						id="name"
-					/>
-					{errors.name && '*name is required'}
-				</div>
-				<div className={styles.formGroup}>
-					<label className={styles.label} htmlFor="email">
-						Email
-					</label>
-					<input
-						className={styles.input}
-						{...register('email', { required: true })}
-						type="text"
-						id="email"
-					/>
-					{errors.email && '*email is required'}
-				</div>
-				<div className={styles.formGroup}>
-					<label className={styles.label} htmlFor="message">
-						Message
-					</label>
-					<textarea
-						className={styles.textArea}
-						{...register('message', { required: true })}
-						id="message"
-						rows="3"></textarea>
-					{errors.message && '*message is required'}
-				</div>
-				<button className={styles.submitButton} type="submit">
-					Submit
-				</button>
-			</form>
+			<div>
+				<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+					<animated.h5 style={titleAnimation} className={styles.contactTitle}>
+						Feel free to reach out if you're looking to connect
+					</animated.h5>
+					<div className={styles.formGroup}>
+						<label className={styles.label} htmlFor="name">
+							Name
+						</label>
+						<input
+							className={styles.input}
+							{...register('name', { required: true })}
+							type="text"
+							id="name"
+						/>
+						{errors.name && '*name is required'}
+					</div>
+					<div className={styles.formGroup}>
+						<label className={styles.label} htmlFor="email">
+							Email
+						</label>
+						<input
+							className={styles.input}
+							{...register('email', { required: true })}
+							type="text"
+							id="email"
+						/>
+						{errors.email && '*email is required'}
+					</div>
+					<div className={styles.formGroup}>
+						<label className={styles.label} htmlFor="message">
+							Message
+						</label>
+						<textarea
+							className={styles.textArea}
+							{...register('message', { required: true })}
+							id="message"
+							rows="3"></textarea>
+						{errors.message && '*message is required'}
+					</div>
+					<button className={styles.submitButton} type="submit">
+						Submit
+					</button>
+				</form>
+			</div>
 		</>
 	);
 };
