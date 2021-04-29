@@ -35,51 +35,49 @@ const contact = () => {
 
 	return (
 		<>
-			<div className={styles.container}>
+			<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
 				<animated.h5 style={titleAnimation} className={styles.contactTitle}>
 					Feel free to reach out if you're looking to connect
 				</animated.h5>
-				<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-					<div className={styles.formGroup}>
-						<label className={styles.label} htmlFor="name">
-							Name
-						</label>
-						<input
-							className={styles.input}
-							{...register('name', { required: true })}
-							type="text"
-							id="name"
-						/>
-						{errors.name && '*name is required'}
-					</div>
-					<div className={styles.formGroup}>
-						<label className={styles.label} htmlFor="email">
-							Email
-						</label>
-						<input
-							className={styles.input}
-							{...register('email', { required: true })}
-							type="text"
-							id="email"
-						/>
-						{errors.email && '*email is required'}
-					</div>
-					<div className={styles.formGroup}>
-						<label className={styles.label} htmlFor="message">
-							Message
-						</label>
-						<textarea
-							className={styles.textArea}
-							{...register('message', { required: true })}
-							id="message"
-							rows="3"></textarea>
-						{errors.message && '*message is required'}
-					</div>
-					<button className={styles.submitButton} type="submit">
-						Submit
-					</button>
-				</form>
-			</div>
+				<div className={styles.formGroup}>
+					<label className={styles.label} htmlFor="name">
+						Name
+					</label>
+					<input
+						className={styles.input}
+						{...register('name', { required: true })}
+						type="text"
+						id="name"
+					/>
+					{errors.name && '*name is required'}
+				</div>
+				<div className={styles.formGroup}>
+					<label className={styles.label} htmlFor="email">
+						Email
+					</label>
+					<input
+						className={styles.input}
+						{...register('email', { required: true })}
+						type="text"
+						id="email"
+					/>
+					{errors.email && '*email is required'}
+				</div>
+				<div className={styles.formGroup}>
+					<label className={styles.label} htmlFor="message">
+						Message
+					</label>
+					<textarea
+						className={styles.textArea}
+						{...register('message', { required: true })}
+						id="message"
+						rows="3"></textarea>
+					{errors.message && '*message is required'}
+				</div>
+				<button className={styles.submitButton} type="submit">
+					Submit
+				</button>
+			</form>
 		</>
 	);
 };
