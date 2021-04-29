@@ -10,7 +10,7 @@ import styles from '../styles/Home.module.css';
 
 const Home = () => {
 	const homeAnimation = useSpring({
-		from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
+		from: { transform: 'translate3d(0, 2px, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
 		delay: 150,
 		config: config.slow,
@@ -27,7 +27,7 @@ const Home = () => {
 	});
 
 	const aboutAnimation = useSpring({
-		from: { transform: 'translate3d(30px, 0, 0)', opacity: 0 },
+		from: { transform: 'translate3d(5px, 0, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
 		delay: 150,
 		config: config.slow,
@@ -35,7 +35,7 @@ const Home = () => {
 
 	return (
 		<>
-			<div className={styles.container}>
+			<div>
 				<div className={styles.homeIcons}>
 					<div className={styles.line}></div>
 					<div>
@@ -83,70 +83,75 @@ const Home = () => {
 					<img src="/IMG_1090.jpeg" alt="Joe" className={styles.homeImage} />
 				</div>
 			</div>
-			<div className={styles.aboutMe} id="about">
-				<animated.div style={aboutAnimation} className={styles.aboutDesc}>
-					<div className={styles.aboutStory}>
-						<div>
-							<p className={styles.aboutP}>
-								I am a 29 year old Full Stack Web Developer who specializes in
-								React, Node and Next.js. I love spending time building projects
-								and learning about new technologies.
-								<br /> <br />
-							</p>
-						</div>
-						<div>
-							<p className={styles.aboutP}>
-								I am currently looking for work. Send me a message, I would love
-								to work with you!
-							</p>
-						</div>
-					</div>
-					<div className={styles.skillSection}>
-						<h1 className={styles.skillsTitle}>Skills</h1>
-						<div className={styles.skills}>
-							<animated.ul style={homeAnimation} className={styles.skillsList}>
-								<div>
-									<li className={styles.item}>
-										<div>
-											<Check />
-										</div>
-										<div>Javascript</div>
-									</li>
-									<li className={styles.item}>
-										<Check /> Typescript
-									</li>
-								</div>
-								<div>
-									<li className={styles.item}>
-										<Check /> Node
-									</li>
 
-									<li className={styles.item}>
-										<Check /> React
-									</li>
-								</div>
-								<div>
-									<li className={styles.item}>
-										<Check /> Next.js
-									</li>
-									<li className={styles.item}>
-										<Check /> Express
-									</li>
-								</div>
-								<div>
-									<li className={styles.item}>
-										<Check /> Git
-									</li>
-									<li className={styles.item}>
-										<Check /> MongoDB
-									</li>
-								</div>
-							</animated.ul>
-							{/* </div> */}
-						</div>
+			<animated.div
+				style={aboutAnimation}
+				className={styles.aboutDesc}
+				id="about">
+				<div className={styles.aboutStory}>
+					<div>
+						<p className={styles.aboutP}>
+							I am a 29 year old Full Stack Web Developer who specializes in
+							React, Node and Next.js. I love spending time building projects
+							and learning about new technologies.
+							<br /> <br /> I am a 29 year old Full Stack Web Developer who
+							specializes in React, Node and Next.js. I love spending time
+							building projects and learning about new technologies.
+						</p>
 					</div>
-				</animated.div>
-			</div>
+					<div>
+						<p className={styles.aboutP}>
+							I am a 29 year old Full Stack Web Developer who specializes in
+							React, Node and Next.js. I love spending time building projects
+							and learning about new technologies.
+						</p>
+					</div>
+				</div>
+				<div className={styles.skillSection}>
+					<h1 className={styles.skillsTitle}>Skills</h1>
+					<div className={styles.skills}>
+						<animated.ul style={homeAnimation} className={styles.skillsList}>
+							<div>
+								<li className={styles.item}>
+									<div>
+										<Check />
+									</div>
+									<div>Javascript</div>
+								</li>
+								<li className={styles.item}>
+									<Check /> Typescript
+								</li>
+							</div>
+							<div>
+								<li className={styles.item}>
+									<Check /> Node
+								</li>
+
+								<li className={styles.item}>
+									<Check /> React
+								</li>
+							</div>
+							<div>
+								<li className={styles.item}>
+									<Check /> Next.js
+								</li>
+								<li className={styles.item}>
+									<Check /> Express
+								</li>
+							</div>
+							<div>
+								<li className={styles.item}>
+									<Check /> Git
+								</li>
+								<li className={styles.item}>
+									<Check /> MongoDB
+								</li>
+							</div>
+						</animated.ul>
+						{/* </div> */}
+					</div>
+				</div>
+			</animated.div>
 			<Footer />
 		</>
 	);

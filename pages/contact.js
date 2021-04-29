@@ -27,7 +27,7 @@ const contact = () => {
 	};
 
 	const titleAnimation = useSpring({
-		from: { transform: 'translate3d(30px, 0, 0)', opacity: 0 },
+		from: { transform: 'translate3d(5px, 0, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
 		delay: 150,
 		config: config.slow,
@@ -35,11 +35,11 @@ const contact = () => {
 
 	return (
 		<>
-			<div className={styles.container}>
-				<animated.h5 style={titleAnimation} className={styles.contactTitle}>
-					Feel free to reach out if you're looking to connect
-				</animated.h5>
+			<div>
 				<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+					<animated.h5 style={titleAnimation} className={styles.contactTitle}>
+						Feel free to reach out if you're looking to connect
+					</animated.h5>
 					<div className={styles.formGroup}>
 						<label className={styles.label} htmlFor="name">
 							Name
