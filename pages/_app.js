@@ -22,6 +22,10 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>joemccann.tech</title>
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1, shrink-to-fit=no"
+				/>
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link
@@ -35,9 +39,16 @@ function MyApp({ Component, pageProps }) {
 					crossorigin="anonymous"
 				/>
 			</Head>
-			<Navbar />
-			<Component {...pageProps} />
-
+			<div className="container">
+				<Navbar />
+				<Component {...pageProps} />
+			</div>
+			<style jsx>{`
+				.container {
+					min-height: 100vh;
+					margin: 25px auto;
+				}
+			`}</style>
 			<style jsx global>{`
 				:root {
 					--bg-color: ${!darkMode ? '#fff' : '#202020'};

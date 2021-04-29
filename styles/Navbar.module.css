@@ -9,14 +9,13 @@
 }
 
 .container {
-	max-width: 65rem;
 	margin: 1rem auto;
 	padding: 0 1.4em;
 }
 .navbarAlignment {
 	display: flex;
 	height: 55px;
-	width: 100%;
+
 	align-items: center;
 	justify-content: space-between;
 	padding-top: 0.5em;
