@@ -1,6 +1,6 @@
 .container {
 	max-width: 65rem;
-	margin: 7rem auto;
+	margin: 4rem auto;
 	padding: 0 1.6rem;
 	color: var(--font-color);
 	font-family: var(--body-font);
@@ -74,7 +74,7 @@
 
 @media (max-width: 768px) {
 	.container {
-		margin-top: 8rem;
+		margin-top: 3rem;
 	}
 
 	.projectP {

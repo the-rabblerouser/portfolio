@@ -10,7 +10,7 @@
 .homeIcons {
 	display: flex;
 	align-items: center;
-	margin-top: 10rem;
+	margin-top: 4rem;
 }
 
 .line {
@@ -151,7 +151,7 @@
 	}
 
 	.homeIcons {
-		margin-top: 7rem;
+		margin-top: 4rem;
 	}
 
 	.line {
@@ -183,12 +183,6 @@
 
 	/* About Section */
 
-	.aboutTitle {
-		font-weight: 200;
-		align-items: center;
-		margin: 4rem 0 0.8rem 0;
-	}
-
 	.aboutDesc {
 		padding: 0 0.8rem;
 		flex-direction: column;
@@ -200,8 +194,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		margin-top: 14rem;
-		margin-bottom: -8rem;
+		margin-top: 8rem;
 	}
 
 	.aboutP {
@@ -211,7 +204,7 @@
 	.skillsTitle {
 		align-self: center;
 		margin-left: -1.2rem;
-		margin-top: 6rem;
+		margin-top: -1rem;
 	}
 
 	.skills {
