@@ -20,13 +20,13 @@ a {
 
 :root {
 	--bg-color: $ {
-		!darkmode? '#fff' : '#202020';
+		!darkmode?'#fff': '#202020';
 	}
 	--font-color: $ {
-		!darkmode? '#202020' : '#fff';
+		!darkmode?'#202020': '#fff';
 	}
 	--accent-color: #82adc9;
 	--button-color: $ {
-		!darkmode? '#fff' : '#82adc9';
+		!darkmode?'#fff': '#82adc9';
 	}
 }

@@ -1,6 +1,4 @@
 .container {
-	min-height: 80vh;
-	max-width: 100vw;
 	padding: 0 0.5rem;
 	display: flex;
 	flex-direction: column;
@@ -13,7 +11,7 @@
 	font-family: var(--title-font);
 	margin-bottom: 2rem;
 	width: 25%;
-	align-self: center;
+	margin-top: 9rem;
 	color: var(--title-color);
 	text-decoration: underline;
 	text-decoration-color: var(--accent-color);

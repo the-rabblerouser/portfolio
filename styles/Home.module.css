@@ -1,6 +1,5 @@
 .container {
 	max-width: 65rem;
-	min-height: 100vh;
 	padding: 20px;
 	margin: 25px auto;
 }
@@ -37,11 +36,11 @@
 
 .home {
 	font-family: var(--title-font);
-	font-size: 3vw;
+	font-size: 3rem;
 	font-weight: 300;
 	color: var(--title-color);
 	line-height: 129.69%;
-	letter-spacing: 0.03em;
+	letter-spacing: 0.1rem;
 	margin: 1.5rem;
 	width: 100%;
 }
@@ -69,7 +68,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	min-height: 60rem;
 	width: 100%;
 	color: var(--font-color);
 }
@@ -147,7 +146,7 @@
 @media (max-width: 768px) {
 	/* Home Section */
 	.home {
-		font-size: 10vw;
+		font-size: 2rem;
 	}
 
 	.homeIcons {
@@ -175,7 +174,7 @@
 
 	.homeImage {
 		width: 110%;
-		height: 40vh;
+		height: 40%;
 		margin-left: -0.25rem;
 		border-radius: 4px;
 		object-fit: cover;
@@ -194,7 +193,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		margin-top: 8rem;
+		/* margin-top: 4rem; */
 	}
 
 	.aboutP {
@@ -216,7 +215,7 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
-		margin-bottom: 4rem;
+		margin-bottom: 0rem;
 	}
 
 	.skillsList {
