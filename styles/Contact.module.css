@@ -78,7 +78,7 @@
 		color: var(--title-color);
 		text-decoration: underline;
 		text-decoration-color: var(--accent-color);
-		margin: 0rem 4rem 3rem 0rem;
+		margin: 4rem 4rem 3rem 0rem;
 	}
 
 	.formGroup {
