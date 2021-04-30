@@ -61,7 +61,7 @@ const Home = () => {
 					</div>
 				</div>
 				<animated.div style={aboutAnimation} className={styles.home}>
-					<div>Hi I'm Joe.</div>
+					<div>Hi I'm Joe,</div>
 					<div>and I'm your next</div>
 					<div>
 						<ReactRotatingText
