@@ -109,7 +109,7 @@ const Home = () => {
 					<div>
 						<p className={styles.aboutP}>
 							I am a 29 year old Full Stack Web Developer who specializes in
-							React, Node and Next.js. I love spending time building projects
+							React, Node and Next.js. I like spending time building projects
 							and learning about new technologies.
 						</p>
 					</div>
