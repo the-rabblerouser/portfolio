@@ -7,7 +7,7 @@ const Footer = () => {
 
 	return (
 		<>
-			<footer className="container">
+			<footer>
 				<div className="footerContent">
 					<p>joemccann.tech {year}</p>
 					<div className="link">
@@ -24,10 +24,6 @@ const Footer = () => {
 			</footer>
 			<style jsx>
 				{`
-					.container {
-						max-width: 65rem;
-					}
-
 					.footerContent {
 						display: flex;
 						justify-content: space-between;

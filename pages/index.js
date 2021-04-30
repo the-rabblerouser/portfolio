@@ -33,6 +33,13 @@ const Home = () => {
 		config: config.slow,
 	});
 
+	const titleAnimation = useSpring({
+		from: { transform: 'translate3d(5px, 0, 0)', opacity: 0 },
+		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
+		delay: 150,
+		config: config.slow,
+	});
+
 	return (
 		<>
 			<div>
@@ -152,6 +159,16 @@ const Home = () => {
 					</div>
 				</div>
 			</animated.div>
+			<div className={styles.contact}>
+				<animated.div style={titleAnimation} className={styles.contactTitle}>
+					Feel free to reach out if you're looking to connect
+				</animated.div>
+				<div>
+					<a href="mailto:tojmccann@gmail.com" className={styles.email}>
+						tojmccann@gmail.com
+					</a>
+				</div>
+			</div>
 			<Footer />
 		</>
 	);
