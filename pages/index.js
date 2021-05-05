@@ -101,10 +101,10 @@ const Home = () => {
 					</div>
 					<div>
 						<p>
-							This site will be my digital identity, where I can write notes.
-							Share my knowledge with others, my opinion on some topics, and
-							open-source projects I create and share them here, maybe with a
-							playground or proof of concept.
+							This site is a place where I can share the open-source projects I
+							create, and display the skills and tools that I have learned. I am
+							currently looking for work. Send me a message if you are hiring or
+							would just like to connect!
 						</p>
 					</div>
 				</animated.div>
@@ -119,10 +119,7 @@ const Home = () => {
 						<animated.ul style={aboutAnimation} className={styles.skillsList}>
 							<div>
 								<li className={styles.item}>
-									<div>
-										<Check />
-									</div>
-									<div>Javascript</div>
+									<Check /> Javascript
 								</li>
 								<li className={styles.item}>
 									<Check /> Typescript
@@ -130,11 +127,10 @@ const Home = () => {
 							</div>
 							<div>
 								<li className={styles.item}>
-									<Check /> Node
-								</li>
-
-								<li className={styles.item}>
 									<Check /> React
+								</li>
+								<li className={styles.item}>
+									<Check /> Node
 								</li>
 							</div>
 							<div>
