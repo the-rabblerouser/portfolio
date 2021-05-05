@@ -50,10 +50,10 @@
 	color: var(--accent-color);
 }
 
-.arrowButton {
+/* .arrowButton {
 	cursor: pointer;
 	margin-top: 1rem;
-}
+} */
 
 /* .homeImage {
 	border-radius: 4px;
@@ -203,18 +203,18 @@
 			infinite;
 	}
 
-	.arrowButton {
+	/* .arrowButton {
 		cursor: pointer;
 		margin-bottom: 1rem;
-	}
+	} */
 
-	.homeImage {
+	/* .homeImage {
 		border-radius: 4px;
 		height: 25rem;
 		width: 100%;
 		margin-top: 4rem;
 		margin-bottom: 7.5rem;
-	}
+	} */
 
 	/* About Section */
 
