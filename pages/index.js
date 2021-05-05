@@ -72,7 +72,7 @@ const Home = () => {
 						/>
 					</div>
 					<div className={styles.devText}>developer</div>
-					<div className={styles.arrowButton}>
+					{/* <div className={styles.arrowButton}>
 						<animated.div style={arrowAnimation}>
 							<Link
 								activeClass="active"
@@ -83,7 +83,7 @@ const Home = () => {
 								<Arrow />
 							</Link>
 						</animated.div>
-					</div>
+					</div> */}
 				</animated.div>
 				{/* <div className={styles.homeImageContainer}>
 					<img src="/IMG_1090.jpeg" alt="Joe" className={styles.homeImage} />
@@ -165,7 +165,6 @@ const Home = () => {
 					</a>
 				</div>
 			</div>
-
 			<Footer />
 		</>
 	);

@@ -47,6 +47,7 @@ function MyApp({ Component, pageProps }) {
 				.container {
 					min-height: 100vh;
 					margin: 25px auto;
+					max-width: 65rem;
 				}
 			`}</style>
 			<style jsx global>{`

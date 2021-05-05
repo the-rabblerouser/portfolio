@@ -78,7 +78,7 @@
 }
 
 .skillsTitle {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	align-self: flex-start;
 	color: var(--title-color);
 	font-family: var(--title-font);
@@ -98,7 +98,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	margin: 1rem 0rem;
+	margin-bottom: 1rem;
 }
 
 .skillsList {
@@ -219,6 +219,7 @@
 	/* About Section */
 
 	.aboutDesc {
+		width: 95%;
 		color: var(--font-color);
 		display: flex;
 		flex-direction: column;
@@ -227,9 +228,10 @@
 
 	.aboutStory {
 		align-self: center;
-		width: 65rem;
+		justify-self: space;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		margin-top: 4rem;
 	}
 
 	.skillSection {
@@ -278,7 +280,7 @@
 	}
 
 	.contactTitle {
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 		font-weight: 300;
 		font-family: var(--title-font);
 		color: var(--title-color);
