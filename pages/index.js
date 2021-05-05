@@ -61,9 +61,8 @@ const Home = () => {
 					</div>
 				</div>
 				<animated.div style={aboutAnimation} className={styles.home}>
-					<div>Hi I'm Joe,</div>
-					<div>and I'm your next</div>
-					<div>
+					<div className={styles.homeText}>Joe McCann</div>
+					<div className={styles.slidingText}>
 						<ReactRotatingText
 							typingInterval={140}
 							deletingInterval={140}
@@ -72,7 +71,7 @@ const Home = () => {
 							items={['frontend', 'backend', 'fullstack']}
 						/>
 					</div>
-					<div>developer.</div>
+					<div className={styles.devText}>developer</div>
 					<div className={styles.arrowButton}>
 						<animated.div style={arrowAnimation}>
 							<Link
@@ -86,36 +85,33 @@ const Home = () => {
 						</animated.div>
 					</div>
 				</animated.div>
-				<div className={styles.homeImageContainer}>
+				{/* <div className={styles.homeImageContainer}>
 					<img src="/IMG_1090.jpeg" alt="Joe" className={styles.homeImage} />
-				</div>
+				</div> */}
 			</div>
 
-			<animated.div
-				style={aboutAnimation}
-				className={styles.aboutDesc}
-				id="about">
+			<animated.div style={aboutAnimation} className={styles.aboutDesc}>
 				<div className={styles.aboutStory}>
 					<div>
-						<p className={styles.aboutP}>
+						<p>
 							I am a 29 year old Full Stack Web Developer who specializes in
 							React, Node and Next.js. I love spending time building projects
 							and learning about new technologies.
-							<br /> <br /> I am a 29 year old Full Stack Web Developer who
-							specializes in React, Node and Next.js. I love spending time
-							building projects and learning about new technologies.
 						</p>
 					</div>
 					<div>
-						<p className={styles.aboutP}>
-							I am a 29 year old Full Stack Web Developer who specializes in
-							React, Node and Next.js. I love spending time building projects
-							and learning about new technologies.
+						<p>
+							This site will be my digital identity, where I can write notes.
+							Share my knowledge with others, my opinion on some topics, and
+							open-source projects I create and share them here, maybe with a
+							playground or proof of concept.
 						</p>
 					</div>
 				</div>
 				<div className={styles.skillSection}>
-					<h1 className={styles.skillsTitle}>Skills</h1>
+					<h1 id="about" className={styles.skillsTitle}>
+						Skills
+					</h1>
 					<div className={styles.skills}>
 						<animated.ul style={homeAnimation} className={styles.skillsList}>
 							<div>
@@ -169,6 +165,7 @@ const Home = () => {
 					</a>
 				</div>
 			</div>
+
 			<Footer />
 		</>
 	);
