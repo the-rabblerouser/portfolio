@@ -150,7 +150,6 @@ const Home = () => {
 								</li>
 							</div>
 						</animated.ul>
-						{/* </div> */}
 					</div>
 				</div>
 			</div>

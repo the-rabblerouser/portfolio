@@ -29,7 +29,7 @@ const Footer = () => {
 						justify-content: space-between;
 						align-items: center;
 						font-family: var(--title-font);
-						font-size: 14px;
+						font-size: 0.88rem;
 						margin-bottom: 0.2rem;
 					}
 
@@ -42,7 +42,7 @@ const Footer = () => {
 						flex-direction: row;
 						justify-content: space-between;
 						align-items: center;
-						width: 4.5rem;
+						width: 6rem;
 						margin-bottom: 1rem;
 						color: var(--title-color);
 					}
