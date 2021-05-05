@@ -10,24 +10,24 @@ import styles from '../styles/Home.module.css';
 
 const Home = () => {
 	const homeAnimation = useSpring({
-		from: { transform: 'translate3d(0, 2px, 0)', opacity: 0 },
+		from: { transform: 'translate3d(0, -10px, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
 		delay: 150,
 		config: config.slow,
 	});
 
-	const arrowAnimation = useSpring({
-		to: async (next) => {
-			await next({ transform: 'translate3d(0, 5px, 0)' });
-			await next({ transform: 'translate3d(0, 15px, 0)' });
-		},
-		from: { transform: 'translate3d(0, 15px, 0)' },
-		config: (config.wobbly, { duration: 1100 }),
-		loop: true,
-	});
+	// const arrowAnimation = useSpring({
+	// 	to: async (next) => {
+	// 		await next({ transform: 'translate3d(0, 5px, 0)' });
+	// 		await next({ transform: 'translate3d(0, 15px, 0)' });
+	// 	},
+	// 	from: { transform: 'translate3d(0, 15px, 0)' },
+	// 	config: (config.wobbly, { duration: 1100 }),
+	// 	loop: true,
+	// });
 
 	const aboutAnimation = useSpring({
-		from: { transform: 'translate3d(5px, 0, 0)', opacity: 0 },
+		from: { transform: 'translate3d(0, 10px, 0)', opacity: 0 },
 		to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
 		delay: 150,
 		config: config.slow,
@@ -60,7 +60,7 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
-				<animated.div style={aboutAnimation} className={styles.home}>
+				<animated.div style={homeAnimation} className={styles.home}>
 					<div className={styles.homeText}>Joe McCann</div>
 					<div className={styles.slidingText}>
 						<ReactRotatingText
@@ -90,8 +90,8 @@ const Home = () => {
 				</div> */}
 			</div>
 
-			<animated.div style={aboutAnimation} className={styles.aboutDesc}>
-				<div className={styles.aboutStory}>
+			<div className={styles.aboutDesc}>
+				<animated.div style={aboutAnimation} className={styles.aboutStory}>
 					<div>
 						<p>
 							I am a 29 year old Full Stack Web Developer who specializes in
@@ -107,13 +107,16 @@ const Home = () => {
 							playground or proof of concept.
 						</p>
 					</div>
-				</div>
+				</animated.div>
 				<div className={styles.skillSection}>
-					<h1 id="about" className={styles.skillsTitle}>
+					<animated.h1
+						style={homeAnimation}
+						id="about"
+						className={styles.skillsTitle}>
 						Skills
-					</h1>
+					</animated.h1>
 					<div className={styles.skills}>
-						<animated.ul style={homeAnimation} className={styles.skillsList}>
+						<animated.ul style={aboutAnimation} className={styles.skillsList}>
 							<div>
 								<li className={styles.item}>
 									<div>
@@ -154,7 +157,7 @@ const Home = () => {
 						{/* </div> */}
 					</div>
 				</div>
-			</animated.div>
+			</div>
 			<div className={styles.contact}>
 				<animated.div style={titleAnimation} className={styles.contactTitle}>
 					Feel free to reach out if you're looking to connect
