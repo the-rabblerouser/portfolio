@@ -1,6 +1,6 @@
 import ReactRotatingText from 'react-rotating-text';
 import { useSpring, animated, config } from 'react-spring';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 
 import { Arrow, Check, Github, LinkedIn } from '../components/Icons';
 
