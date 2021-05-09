@@ -2,7 +2,7 @@ import TextLoop from 'react-text-loop';
 import { useSpring, animated, config } from 'react-spring';
 // import { Link } from 'react-scroll';
 
-import { Arrow, Check, Github, LinkedIn } from '../components/Icons';
+import { Check, Github, LinkedIn } from '../components/Icons';
 
 import Footer from '../components/Footer';
 
