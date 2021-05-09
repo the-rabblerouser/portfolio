@@ -21,6 +21,7 @@
 		"react-rotating-text": "^1.4.1",
 		"react-scroll": "^1.8.2",
 		"react-spring": "^9.1.0",
+		"react-text-loop": "^2.3.0",
 		"swr": "^0.5.5"
 	}
 }

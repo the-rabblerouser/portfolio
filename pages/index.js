@@ -1,4 +1,4 @@
-import ReactRotatingText from 'react-rotating-text';
+import TextLoop from 'react-text-loop';
 import { useSpring, animated, config } from 'react-spring';
 // import { Link } from 'react-scroll';
 
@@ -63,12 +63,10 @@ const Home = () => {
 				<animated.div style={homeAnimation} className={styles.home}>
 					<div className={styles.homeText}>Joe McCann</div>
 					<div className={styles.slidingText}>
-						<ReactRotatingText
-							typingInterval={140}
-							deletingInterval={140}
-							pause={2000}
-							color="#82ADC9"
-							items={['frontend', 'backend', 'fullstack']}
+						<TextLoop
+							interval="4000"
+							className={styles.flipper}
+							children={['frontend', 'backend', 'fullstack']}
 						/>
 					</div>
 					<div className={styles.devText}>developer</div>
